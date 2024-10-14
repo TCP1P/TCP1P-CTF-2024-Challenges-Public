@@ -1,0 +1,7 @@
+services:
+  pycrud:
+    build: .
+    ports:
+      - "55540:5000"
+    restart: always
+    read_only: true

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Hacked-V2"
+author: "daffainfo"
+category: Web
+description: |
+  Well wlll well, the hacker still managed to hack my website, I'm sure this time they won't be able to hack my website
+
+  Connect: http://{{ .host }}:14012
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p web-hacked-v2 up --build --detach
+  stop: cd ./src && docker compose -p web-hacked-v2 down --volumes
+
+flags:
+- TCP1P{N0_m0r3_url_3nC0ded_tH1ng_bRuh_ba121ba121ba121}
+
+provide: ./dist

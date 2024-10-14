@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "nuclei-v2"
+author: "daffainfo"
+category: Misc
+description: |
+  Last year, I made the challenge too easy. Now I'm making it harder.
+
+  Connect: http://{{ .host }}:20012
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: |
+    CHALL=$(basename "$PWD")
+    pm2 stop "$CHALL"
+    pm2 delete "$CHALL"
+    docker compose down --volumes
+    pm2 start "bash ./run.sh" --name "$CHALL"
+  stop: |
+    CHALL=$(basename "$PWD")
+    pm2 stop "$CHALL"
+    pm2 delete "$CHALL"
+    docker compose down --volumes
+
+flags:
+- TCP1P{I_b3li3v3_thi5_i5_h4rd3r_th4n_l45t_y34r}
+
+provide: ./dist

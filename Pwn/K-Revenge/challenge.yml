@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "K"
+author: "rui"
+category: Pwn
+description: |
+    For yall who like K pwn
+
+    **Connection**: `nc {{ .host }} 20024`
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: docker compose -p pwn-k up --build -d
+    stop: docker compose -p pwn-k down --volumes
+
+flags:
+    - TCP1P{cp -r K K-Revenge}
+
+provide: K.tar.gz

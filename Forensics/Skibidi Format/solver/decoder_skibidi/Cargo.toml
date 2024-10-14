@@ -1,0 +1,10 @@
+[package]
+name = "skibidi_to_png"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.24.6"
+aes-gcm = "0.10"       # For AES-GCM encryption
+rand = "0.8"           # For generating random keys and IVs
+zstd = "0.11"

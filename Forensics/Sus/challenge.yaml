@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Sus"
+author: "daffainfo"
+category: Forensics
+description: |
+  I received this file from my boss's email, but when I opened it, suddenly all my files got encrypted and I got blackmailed :(((. At least please help me recover my files
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{thank_g0ddd_youre_able_to_decrypt_my_files}
+
+provide: ./dist

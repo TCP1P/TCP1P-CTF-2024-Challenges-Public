@@ -1,0 +1,5 @@
+bot/.env
+
+bot/node_modules
+bot/npm-debug.log*
+bot/.pnpm-debug.log*

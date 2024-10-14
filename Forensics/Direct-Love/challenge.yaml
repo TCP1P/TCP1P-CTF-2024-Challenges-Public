@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Direct-Love"
+author: "C2uru"
+category: Forensics
+description: |
+  My fiancée, Mizuhara Chizuru, lent her laptop to one of her friends. Her friend downloaded files using a peer-to-peer protocol on Windows. However, not long after, one of Chizuru's important documents went missing. There's always something with my fiancée :D
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{It_tOOk_4_lOt_Of_s4cr1f1ces_fOr_Ch1zUrU_hUh?_It's_4ctU4lly_nOth1ng_fOr_me_4s_her_f14ncé.}
+
+provide: ./dist

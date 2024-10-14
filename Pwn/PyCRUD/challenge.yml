@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "PyCRUD"
+author: "msfir"
+category: Pwn
+description: |
+    Oh man, I'm so bored with ordinary CRUD challenges.
+
+    **Connection**: `nc {{ .host }} 55540`
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: cd ./src && docker compose -p pwn-pycrud up --build --detach
+    stop: cd ./src && docker compose -p pwn-pycrud down --volumes
+
+flags:
+    - TCP1P{maybe_you_are_also_bored_with_ordinary_crud?}
+
+provide: ./dist.zip

@@ -1,0 +1,8 @@
+services:
+  reading_test:
+    build: .
+    ports:
+      - "55551:1337"
+    restart: always
+    read_only: true
+    privileged: true

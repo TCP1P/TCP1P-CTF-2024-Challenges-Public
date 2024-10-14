@@ -1,0 +1,15 @@
+version: '3'
+services:
+  talking:
+    build:
+      context: .
+    working_dir: /home/usero
+    container_name: whatstheworst
+    restart: always
+    ports:
+      - "19328:19328"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.0.0.1

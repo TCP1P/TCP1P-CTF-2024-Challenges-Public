@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Interfaces"
+author: "Marc"
+category: Mobile
+description: |
+  no secret between us, 'kay?
+
+  ---
+
+  The infrastructure being used is based on our Mobile POC Tester (https://github.com/TCP1P/Mobile-POC-Tester).
+  You will need to create your exploit application that will be executed in the server.
+  You can check `client_dist.py` for more information on how the automation for this challenge runs.
+
+  **POC Tester**: http://45.32.119.201:5000/
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: |
+    CHALLENGE_NAME="Interfaces"
+    CHALLENGES_DIR="../../.dependency/mobile-poc-tester/web/src/challenges"
+    CHALLENGE_DIR="${CHALLENGES_DIR}/${CHALLENGE_NAME}"
+    mkdir $CHALLENGE_DIR
+    cp ./client.py $CHALLENGE_DIR
+    cp ./dist/challenge.apk $CHALLENGE_DIR
+  stop: |
+    CHALLENGE_NAME="Interfaces"
+    CHALLENGES_DIR="../../.dependency/mobile-poc-tester/web/src/challenges"
+    CHALLENGE_DIR="${CHALLENGES_DIR}/${CHALLENGE_NAME}"
+    rm -rf $CHALLENGE_DIR
+
+flags:
+- TCP1P{UR1_Byp4ss_t0_JSInterface_Abus3}
+
+provide: ./dist

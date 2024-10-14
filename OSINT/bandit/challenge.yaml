@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+
+name: Bandit
+author: Jieyab89
+description: |-
+  An Jieyab as informant took a photo of a vehicle, can you find the location?
+
+  The flag is name the location and date example TCP1P{Town, Coutry. Month Year}
+
+  Example : TCP1P{Yogyakarta, Indonesia. June 2010}
+value: 1000
+type: StaticAttachment
+flags:
+  - TCP1P{Malang, Indonesia. October 2019}
+
+provide: ./src/suspect.zip

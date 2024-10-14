@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Reading Test"
+author: "msfir"
+category: Pwn
+description: |
+    Can you pass my reading test?
+
+    **Connection**: `nc {{ .host }} 55550`
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: cd ./src && docker compose -p pwn-reading-test up --build --detach
+    stop: cd ./src && docker compose -p pwn-reading-test down --volumes
+
+flags:
+    - TCP1P{i_give_you_full_marks_for_this_test}
+
+provide: ./dist.zip

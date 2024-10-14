@@ -1,0 +1,6 @@
+
+FROM nginx:alpine
+RUN apk add openssl
+WORKDIR /tmp
+COPY ext.conf /tmp/ext.conf
+RUN openssl req -x509 -newkey rsa:4096 -keyout privkey.pem -out fullchain.pem -days 365 -nodes -config ext.conf

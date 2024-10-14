@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Denis JS"
+author: "Dimas & ayapi"
+category: Misc
+description: |
+  Hello guys, Denis just make a simple calculator in js, can you try it?
+
+value: 1000
+type: DynamicContainer
+
+scripts:
+  start: cd ./src && docker build -t denis-js .
+
+container:
+  flagTemplate: "TCP1P{hope_nagi_didnt_see_i_use_his_payload_to_solve_this_challenge}"
+  containerImage: "denis-js:latest"
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  containerExposePort: 6000
+  enableTrafficCapture: false
+
+provide: ./dist

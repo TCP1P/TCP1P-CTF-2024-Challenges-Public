@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Denis JS (Fixed)"
+author: "Dimas & ayapi"
+category: Web
+description: |
+  There was a trivial bug on our previous calculator's code. Hopefully, this time there won't be a any issues
+
+  **Connection**: `nc {{ .host }} <port>`
+
+value: 1000
+type: StaticContainer
+
+scripts:
+  start: cd ./src && docker build -t denis-js-fixed .
+
+container:
+  containerImage: "denis-js-fixed:latest"
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  containerExposePort: 6000
+  enableTrafficCapture: false
+flags:
+ - TCP1P{hopefully_the_code_would_be_more_likely_safe_by_now}
+
+provide: ./dist

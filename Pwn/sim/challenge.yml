@@ -1,0 +1,19 @@
+name: "sim"
+author: "hygge"
+category: Pwn
+description: |
+    sim bruv?
+
+    **Connection**: `nc {{ .host }} 55551`
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: cd ./src && docker compose -p pwn-sim up --build --detach
+    stop: cd ./src && docker compose -p pwn-sim down --volumes
+
+flags:
+    - TCP1P{uhmmmmm_what_the_sigma}
+
+provide: ./dist.zip

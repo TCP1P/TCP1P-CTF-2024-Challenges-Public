@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "pressword-v2"
+author: "dimas"
+category: Web
+description: |
+  In this challenge we will exploit some vulnerability from php and wordpress, i hope you learn many thing from this challenge :3
+
+  Challenge: http://{{ .host }}:10337
+
+  Bot: http://{{ .host }}:10338
+  Bot Mirror: http://{{ .host }}:20338/
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: |
+    pm2 stop "pressword-v2-script"
+    pm2 delete "pressword-v2-script"
+    docker compose down --volumes
+    pm2 start "bash ./run.sh" --name "pressword-v2-script"
+  stop: |
+    pm2 stop "pressword-v2-script"
+    pm2 delete "pressword-v2-script"
+    docker compose down --volumes
+
+flags:
+- TCP1P{oh_my_god_there_are_a_lot_of_wordpress_and_php_vulns_right_there}
+- TCP1P{oh_my_god_did_i_just_open_the_rest_my_bad_:(}
+
+
+provide: ./dist

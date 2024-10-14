@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  proxy:
+    image: openresty/openresty:latest
+    ports:
+      - 14746:80
+    volumes:
+      - ./src:/var/www/html:ro
+      - ./proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - internal
+    depends_on:
+      - bot
+  bot:
+    build: bot
+    ports:
+      - 35298:3000
+    environment:
+      APPNAME: Admin
+      APPURL: http://proxy/
+      APPURLREGEX: ^https?://(?!proxy\b).*$
+      APPFLAG: TCP1P{byte_order_mark_pluss_some_alert_bypass_756789}
+      APPLIMIT: 2
+      APPLIMITTIME: 60
+      # USE_PROXY: 1
+      DISPLAY: ${DISPLAY}
+    networks:
+      - internal
+    # uncoment this if you need to run the bot in GUI mode
+    # volumes:
+      # - /tmp/.X11-unix:/tmp/.X11-unix
+
+networks:
+  internal:

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Nyann"
+author: "aseng"
+category: Reverse Engineering
+description: |
+  Hackerika leaves her neko pet, Nyann in her house and it is your job to find the food for it! 
+  Prerequisite -> `https://nekovm.org/download/`
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{miamaow_c4t_1s_lyf3_n3k0_chan_is_4ever}
+
+provide: ./dist

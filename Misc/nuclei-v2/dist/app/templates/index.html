@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nuclei V2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center mb-4">Nuclei V2</h1>
+
+                {% if output %}
+                <div class="alert alert-info mb-3" role="alert" style="width: 90%; margin: 0 auto;">
+                    <b>Output: </b><pre>{{ output }}</pre>
+                </div>
+                {% endif %}
+                
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label for="urlInput">URL</label>
+                        <input type="url" id="urlInput" name="url" class="form-control" style="width: 90%; margin: 0 auto;" placeholder="Enter a URL...">
+                    </div>
+                    <div class="form-group">
+                        <label for="templateInput">Template</label>
+                        <textarea id="templateInput" name="template" class="form-control" rows="20" style="width: 90%; margin: 0 auto;" placeholder="Paste your template here..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" style="width: 90%; margin: 0 auto;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+name: "Average Flag Checker"
+author: "ryuk"
+category: Reverse Engineering
+description: |
+  Let's do this warm up flag checker
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{h0w_d1d_y0u_50lv3_th1s_ch4ll?_9b14fa}
+
+provide: ./dist

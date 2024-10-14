@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+
+name: Lost Younger Sister
+author: Jieyab89
+description: |-
+  Help Jieyab find the Violet, please read the attachment
+
+  The flag is is name of the bus stop in the photo
+
+  Example Flag : TCP1P{KARIMUN JAWA 11 A}
+
+  *Pro tips: Check the case sensitive! Check the street view
+
+value: 1000
+type: StaticAttachment
+flags:
+ - TCP1P{JPO SMP MUHAMMADIYAH 10 B}
+hints:
+ - check the street view
+provide: ./src/Attachment.zip

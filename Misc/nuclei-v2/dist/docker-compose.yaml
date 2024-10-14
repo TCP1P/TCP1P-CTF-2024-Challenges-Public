@@ -1,0 +1,24 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_ENV: production
+      MYSQL_HOST: db
+      MYSQL_USER: REDACTED
+      MYSQL_PASSWORD: REDACTED
+      MYSQL_DB: loginapp
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: REDACTED
+      MYSQL_DATABASE: loginapp
+      MYSQL_USER: REDACTED
+      MYSQL_PASSWORD: REDACTED
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql

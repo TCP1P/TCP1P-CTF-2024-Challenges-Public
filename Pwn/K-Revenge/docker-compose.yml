@@ -1,0 +1,9 @@
+services:
+  k:
+    build: .
+    ports:
+      - 20024:8000
+    working_dir: /home/ctf
+    entrypoint: /etc/init.sh
+    init: true
+    restart: always

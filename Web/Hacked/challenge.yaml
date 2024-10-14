@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Hacked"
+author: "daffainfo"
+category: Web
+description: |
+  My website is always being hacked by hackers >:(. That's why I created a very very very very secure website so they can't hack it again HAHAHAHA!!
+
+  Connect: http://{{ .host }}:10012
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: |
+    CHALL=$(basename "$PWD")
+    pm2 stop "$CHALL"
+    pm2 delete "$CHALL"
+    cd ./src && pm2 start "bash ./run.sh" --name "$CHALL"
+  stop: |
+    CHALL=$(basename "$PWD")
+    pm2 stop "$CHALL"
+    pm2 delete "$CHALL"
+
+flags:
+- TCP1P{Ch41n1ng_SsRF_pLu5_5St1_ba83f3ff121ba83f3ff121}
+
+provide: ./dist

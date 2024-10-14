@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "TCP51Prime"
+author: "Agoyy"
+category: Cryptography
+description: |
+  plzz check my prime
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{prime_prime_prime_prime_prime_prime_prime_prime_prime_prime}
+
+provide: ./dist

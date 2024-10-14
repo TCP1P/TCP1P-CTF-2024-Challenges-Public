@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "That one RSA challenge"
+author: "azuketto"
+category: Cryptography
+description: |
+  This is that one mandatory easy RSA challenge in every CTF, hope it's not that boring
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{AmEeeeeEE33333eeee333_T_T_8883938ef7571cc2}
+
+provide: ./dist

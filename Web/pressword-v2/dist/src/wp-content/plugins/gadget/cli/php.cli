@@ -1,0 +1,19 @@
+<?php
+
+$options = getopt('', ['cmd:']);
+
+if (isset($options['cmd'])) {
+    $cmd = escapeshellcmd($options['cmd']);
+
+    $command = "php $cmd";
+    $output = shell_exec($command);
+
+    if ($output !== null) {
+        echo "Value of $cmd: $output";
+    } else {
+        echo "Environment variable $cmd not found.";
+    }
+} else {
+    echo "Please provide a variable name using --cmd option.\n";
+    echo "Example: php check_env.php --cmd=MY_VARIABLE\n";
+}

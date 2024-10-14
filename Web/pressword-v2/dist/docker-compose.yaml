@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  wordpress:
+    build: .
+    ports:
+      - 10337:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+      WP_TITLE: ${WP_TITLE}
+      WP_HOST: ${WP_HOST}
+      WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL}
+    volumes:
+      - ./src/wp-content/plugins:/var/www/html/wp-content/plugins:ro
+      - ./conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini:ro
+      - ./.htaccess:/var/www/html/.htaccess:ro
+    networks:
+      - internal
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: ${WORDPRESS_DB_NAME}
+      MYSQL_USER: ${WORDPRESS_DB_USER}
+      MYSQL_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    networks:
+      - internal
+  bot:
+    build: bot
+    environment:
+      APPNAME: Admin
+      APPURL: http://wordpress
+      APPURLREGEX: ^http(|s)://.*$
+      APPFLAG: noflaghere
+      APPLIMIT: 2
+      APPLIMITTIME: 60
+    ports:
+      - 10338:8888
+    networks:
+      - internal
+
+networks:
+  internal:

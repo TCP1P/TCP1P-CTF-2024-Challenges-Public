@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "molecular cryptography revenge"
+author: "BerlianGabriel"
+category: Cryptography
+description: |
+  I have revamped my DNA encryption system, and now I use it to encrypt images! Now it shouldn't be that easy to break.
+
+  Wrap the flag with TCP1P{}
+
+  Connect: nc {{ .host }} 1985
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p molecular2 up --build --detach
+  stop: cd ./src && docker compose -p molecular2 down --volumes
+
+flags:
+- TCP1P{Fancy_DNA_and_hyperchaotic_encryption_yet_still_not_IND_CPA}
+
+provide: ./dist

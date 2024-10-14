@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "What's the Worst That Could Happen"
+author: "Wrth"
+category: Cryptography
+description: |
+  Why do AES have too much components?
+
+  Connect: nc {{ .host }} 19328
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p whatstheworst up --build --detach
+  stop: cd ./src && docker compose -p whatstheworst down --volumes
+
+flags:
+- TCP1P{well_well_well_9a80dfee0912}
+
+provide: ./dist

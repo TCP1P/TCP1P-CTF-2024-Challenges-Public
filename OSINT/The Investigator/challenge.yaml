@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+
+name: The Investigator
+author: Jieyab89
+description: |-
+  Help Jieyab found the newspaper. When was this newspaper published?
+
+  The flag name is date TCP1P{Date Month Year}
+
+  Example TCP1P{29 January 2001}
+
+value: 1000
+type: StaticAttachment
+flags:
+  - TCP1P{17 December 1983}
+
+provide: ./src/Attachment.zip

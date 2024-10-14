@@ -1,0 +1,7 @@
+services:
+  reading_test:
+    build: .
+    ports:
+      - "55550:5000"
+    restart: always
+    read_only: true

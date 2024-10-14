@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Forevncrypt"
+author: "53buahapel"
+category: Forensics
+description: |
+  After reading this article, I'm now hesitant to use xz-utils for compression:
+  https://www.openwall.com/lists/oss-security/2024/03/29/4
+  As a result, I've been searching for alternative compression tools. I found one online, but unfortunately this tools are trash  because it has limited features. Specifically, I’m unable to decompress files that were compressed with a password. Could you please help me recover them?
+
+value: 1000
+type: StaticAttachment
+
+flags:
+  - TCP1P{3_challenge_in_one_category_ummm_hehe}
+
+provide: ./dist

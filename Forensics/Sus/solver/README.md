@@ -1,0 +1,4 @@
+1. Analyze the docx, and you will find that the docx will download files from https://gist.githubusercontent.com/daffainfo/20a7b18ee31bd6a22acd1a90c1c7acb9/raw/670f8d57403a02169d5e63e2f705bd4652781953/test.ps1 and then executed
+2. Analyze the Powershell, After analyzing it, you will know that the files in the Documents folder will be encrypted with AES-CBC-256 with the key and IV that are already in the script.
+3. Decode the variable `$kNTZHxWPKrOOROlpTvAyhuwGsegbxRPP0YBomB1ACpvkVBTc18Emj8lEGi4sPSA6xtLD0ToTaHcJF0m5Z2NKzjiF6DRdlVAfxFPFeYQ0Hhv8gjVDzPpH190fAesz` with base64 then the key is the first 32 bytes and the iv is the rest
+4. Use that key and iv to decrypt the flag

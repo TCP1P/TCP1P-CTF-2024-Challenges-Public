@@ -1,0 +1,21 @@
+id: template-1
+
+info:
+  name: Template 1
+  author: daffainfo
+  severity: medium
+  description: Read env to get MySQL credential
+  tags: ctf
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "MYSQL"
+
+    extractors:
+      - type: regex
+        regex:
+          - ".*"

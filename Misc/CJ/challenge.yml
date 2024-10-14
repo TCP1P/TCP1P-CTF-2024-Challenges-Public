@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "CJ"
+author: "Marc"
+category: Misc
+description: |
+    no it's not Cyber Jawara.
+
+value: 1000
+type: StaticContainer
+
+scripts:
+    start: cd chall && docker build -t cjail .
+
+container:
+    containerImage: "cjail:latest"
+    memoryLimit: 512
+    cpuCount: 2
+    storageLimit: 512
+    containerExposePort: 8080
+    enableTrafficCapture: false
+
+flags:
+    - TCP1P{AST-P4rs3r_C0nfus1on_is_a_R3al_Th1nG}
+
+provide: ./dist

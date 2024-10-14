@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Feedback"
+author: "Hackerika"
+category: Misc
+description: |
+  Hello fellow TCP1P-CTF participant! Your feedback is valuable to us as it helps us improve and enhance future CTF events.🚀🚀🚀
+
+  Feel free to express your truest thoughts in the form provided below. :)
+
+  Here is the form: https://forms.gle/DLyCMLtQ5GFHpWs17
+
+value: 1
+type: StaticAttachment
+
+flags:
+- TCP1P{ThankYouForFillingTheForm}

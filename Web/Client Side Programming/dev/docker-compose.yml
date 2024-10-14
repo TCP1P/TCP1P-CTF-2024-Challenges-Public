@@ -1,0 +1,51 @@
+version: "3"
+
+volumes:
+  uploads:
+
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - uploads:/var/www/html/uploads
+    ports:
+      - 5435:8080
+    networks:
+      - internal
+    depends_on:
+      - backend
+      - frontend
+  backend:
+    build:
+      context: ../imagefmt
+      dockerfile: ./Dockerfile.imagefmt
+    volumes:
+      - uploads:/app/uploads
+    networks:
+      - internal
+  frontend:
+    build:
+      context: ../ui
+      dockerfile: ./Dockerfile.ui
+    networks:
+      - internal
+  bot:
+    build:
+      context: ../bot
+      dockerfile: Dockerfile
+    environment:
+      APPNAME: Admin
+      APPURL: https://proxy:8080/
+      APPURLREGEX: ^https://.*$
+      APPFLAG: TCP1P{idk_if_it's_fun_or_not_but_it's_really_really_looooooooong_challenge_7ccf042c45f06017}
+      APPLIMIT: 2
+      APPLIMITTIME: 60
+      USE_PROXY: 1
+    networks:
+      - internal
+
+networks:
+  internal:

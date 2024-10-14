@@ -1,0 +1,13 @@
+name: "WannaFlag"
+author: "ryuk"
+category: Reverse Engineering
+description: |
+  WannaFlag gang encrypted my important file, can you help me to decrypt it?
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{wh4t_4_r3v3rs3_3ng1neEr!_76ad1fea}
+
+provide: ./dist

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "functional"
+author: "ayapi"
+category: Misc
+description: |
+  Do you think the code is still functional?
+
+  **Connection**: `nc {{ .host }} <port>`
+
+value: 1000
+type: DynamicContainer
+
+scripts:
+  start: cd ./src && docker build -t functional .
+
+container:
+  flagTemplate: "TCP1P{h3ll0_from_jailCTF_1_w0nder_if__1t_s_st1ll_function4l_th0ugh_fb91f07abf}"
+  containerImage: "functional:latest"
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  containerExposePort: 5000
+  enableTrafficCapture: true
+
+provide: ./dist

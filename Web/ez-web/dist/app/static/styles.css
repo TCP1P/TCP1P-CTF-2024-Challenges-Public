@@ -1,0 +1,102 @@
+/* General Styles */
+.container {
+    margin-top: 20px;
+}
+
+/* Dashboard styles */
+.dashboard h1 {
+    text-align: center;
+}
+
+/* Register Form */
+.register-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Manage User Form */
+.manage-user-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Profile Update */
+.profile-update {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture */
+.current-profile-pic {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar a.nav-link {
+    color: #007bff; /* Bootstrap primary color for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a.nav-link:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.navbar-toggler {
+    border-color: #007bff; /* Color for the hamburger icon */
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; /* Color for the toggle icon */
+}
+
+/* Add some margin to the top of the page for better spacing */
+.container {
+    margin-top: 20px;
+}
+
+.dashboard .profile-pic img,
+.content .profile-pic img {
+    max-width: 150px; /* Adjust this size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 50%; /* Keep the circular shape */
+}
+
+#visit-form {
+    min-width: 300px;
+    margin: 5px auto;
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

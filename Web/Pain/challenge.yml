@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Pain"
+author: "dimas"
+category: Web
+description: |
+  This challenge is the definition of pain!
+
+  Web: http://{{ .host }}:14746
+  Bot: http://{{ .host }}:35298
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: docker compose -p web-pain up --build --detach
+  stop: docker compose -p web-pain down --volumes
+
+flags:
+- TCP1P{byte_order_mark_pluss_some_alert_bypass_756789}
+
+provide: ./dist

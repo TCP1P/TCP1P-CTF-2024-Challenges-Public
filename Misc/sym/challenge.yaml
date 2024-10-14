@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "sym"
+author: "ayapi"
+category: Misc
+description: |
+  Another Py2-jail, yet only symbol allowed...
+
+  **Connection**: `nc {{ .host }} <port>`
+
+value: 1000
+type: StaticContainer
+
+scripts:
+  start: cd ./src && docker build -t sym .
+
+container:
+  containerImage: "sym:latest"
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  containerExposePort: 5000
+  enableTrafficCapture: true
+
+flags:
+  - TCP1P{r3pr_b4ck71ck_byp455_f0r_7h3_w1n_1b9bffa666}
+
+provide: ./dist

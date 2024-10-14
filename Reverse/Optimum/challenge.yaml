@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Optimum"
+author: "aseng"
+category: Reverse Engineering
+description: |
+  Not an optimize-me challenge, just an "optimized" version of certain language. Download the attachment from `https://mega.nz/file/MAgwGSAI#Inlx591Iu-FUVjHspMTk3W5bkvFmOZQvyP-i3xpD_74` and run `./server -H <yourport> -f 1` , thus you can visit your favorite `http://localhost:yourport`
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{u_9ot_m3_GG!}

@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./app
+    environment:
+      APP_SECRET: REDACTED
+      FLAG: TCP1P{REDACTED}
+    networks:
+      - internal
+    
+
+  proxy:
+    image: nginx:latest
+    container_name: nginx-proxy
+    volumes:
+      - ./proxy/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "10017:80"
+    networks:
+      - internal
+    depends_on:
+      - bot
+
+  bot:
+    build:
+      context: bot
+      args:
+        - BROWSER=chromium
+    restart: always
+    environment:
+      APPNAME: Admin
+      APPURL: http://proxy/
+      APPURLREGEX: ^http://proxy/.*$
+      APPLIMIT: 2
+      APP_SECRET: REDACTED
+      APPLIMITTIME: 60
+      USE_PROXY: 1
+      DISPLAY: ${DISPLAY}
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge

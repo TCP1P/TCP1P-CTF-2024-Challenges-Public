@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "typically not a revenge"
+author: "ayapi"
+category: Misc
+description: |
+  How do you typically escape from a Python jail?
+
+  **Connection**: `nc {{ .host }} <port>`
+
+value: 1000
+type: StaticContainer
+
+scripts:
+  start: cd ./src && docker build -t typically-not-a-revenge .
+
+container:
+  containerImage: "typically-not-a-revenge:latest"
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  containerExposePort: 5000
+  enableTrafficCapture: true
+
+flags:
+  - "TCP1P{def1nitely_n0t_4_r3venge_chall_fr0m_older_ctf_d0acf187ae}"
+
+provide: ./dist

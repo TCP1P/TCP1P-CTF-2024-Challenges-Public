@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Baby CFHP"
+author: "rui"
+category: Pwn
+description: |
+    Yet another simple and minimalistic source given pwnable challenge
+
+    **Connection**: `nc {{ .host }} 20011`
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: cd chall && docker compose -p pwn-baby-cfhp up --build -d
+    stop: cd chall && docker compose -p pwn-baby-cfhp down --volumes
+
+flags:
+    - TCP1P{baby_www}
+
+provide: baby_cfhp.tar.gz

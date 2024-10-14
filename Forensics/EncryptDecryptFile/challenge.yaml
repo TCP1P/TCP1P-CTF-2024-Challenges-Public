@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "EncryptDecryptFile"
+author: "daffainfo"
+category: Forensics
+description: |
+  My brother deleted an important file from the encrypt-decrypt-file repository
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{introduction_to_hg_a82ffbe612}
+
+provide: ./dist

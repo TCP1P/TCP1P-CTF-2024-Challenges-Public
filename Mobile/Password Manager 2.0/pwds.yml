@@ -1,0 +1,9 @@
+passwords:
+- id: 1
+  application: Facebook
+  username: john
+  password: Alice123
+- id: 2
+  application: Google
+  username: john
+  password: Bob443

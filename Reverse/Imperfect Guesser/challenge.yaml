@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Imperfect Guesser"
+author: "aseng"
+category: Reverse Engineering
+description: |
+  Leaving a floating secret crumbs with the help of untrained labour, now "guess" the flag. 
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{1ts_tr3ndy_NN_n0w}
+
+provide: ./dist

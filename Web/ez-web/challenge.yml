@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "ez-web"
+author: "kiseki"
+category: Web
+description: |
+  hope you enjoy this.
+
+  Connect: http://{{ .host }}:10017
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p web-ez-web up --build --detach
+  stop: cd ./src && docker compose -p web-ez-web down --volumes
+
+flags:
+- TCP1P{web_c4che_d3cept1on_rev1sited}
+
+provide: ./dist

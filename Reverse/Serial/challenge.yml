@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Serial"
+author: "Marc"
+category: Reverse
+description: |
+    `User:B74A-929C-666F-0FF5`
+
+value: 1000
+type: StaticAttachment
+
+flags:
+    - TCP1P{C3rt1fied_S3r14l_Cr4ck3r!}
+
+provide: ./dist

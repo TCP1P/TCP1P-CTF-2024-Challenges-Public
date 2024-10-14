@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "LookDown"
+author: "Dimas Maulana"
+category: Mobile
+description: |
+  Hi guys, i just make my second Mobile app, can you check it?
+
+  ---
+
+  The infrastructure being used is based on our Mobile POC Tester (https://github.com/TCP1P/Mobile-POC-Tester).
+  You will need to create your exploit application that will be executed in the server.
+  You can check `client_dist.py` for more information on how the automation for this challenge runs.
+
+  **POC Tester**: http://45.32.119.201:5000/
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: |
+    CHALLENGE_NAME="LookDown"
+    CHALLENGES_DIR="../../.dependency/mobile-poc-tester/web/src/challenges"
+    CHALLENGE_DIR="${CHALLENGES_DIR}/${CHALLENGE_NAME}"
+    mkdir $CHALLENGE_DIR
+    cp ./client.py $CHALLENGE_DIR
+    cp ./challenge.apk $CHALLENGE_DIR
+  stop: |
+    CHALLENGE_NAME="LookDown"
+    CHALLENGES_DIR="../../.dependency/mobile-poc-tester/web/src/challenges"
+    CHALLENGE_DIR="${CHALLENGES_DIR}/${CHALLENGE_NAME}"
+    rm -rf $CHALLENGE_DIR
+
+flags:
+- TCP1P{e9dbd49b4cc177d6823054a00ffe943f5fbd8e7750d3bec03564f4684cf6a0b9}
+
+provide: ./dist

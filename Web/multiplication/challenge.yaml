@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Multiplication"
+author: "daffainfo"
+category: Web
+description: |
+  Multiplication is very easy, right? right??
+
+  Connect: http://{{ .host }}:10011
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p web-multiplication up --build --detach
+  stop: cd ./src && docker compose -p web-multiplication down --volumes
+
+flags:
+- TCP1P{1n5p1R3d_by_l1V30v3rFloW_but_1_4dD3d_mor3_f1lt3rs_H4haH4h4}
+
+provide: ./dist

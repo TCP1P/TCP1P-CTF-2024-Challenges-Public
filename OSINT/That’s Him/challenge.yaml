@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+
+name: Thats Him
+author: Jieyab89
+description: |-
+  Help Jieyab find Julient
+
+  The flag is country, prefecture, city, district/area, postal code
+
+  Exaample: TCP1P{Japan, Tokyo, Katsushika, Tateishi, 124-0012}
+
+  *Pro tips: Check the case sensitive. Make sure you have searched list of postal codes that area or the district
+
+value: 1000
+type: StaticAttachment
+flags:
+  - TCP1P{Japan, Okinawa, Uruma, Ishikawa Akasaki, 904-1103}
+
+provide: ./src/file.zip

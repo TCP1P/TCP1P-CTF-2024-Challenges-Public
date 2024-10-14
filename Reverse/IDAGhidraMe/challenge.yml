@@ -1,0 +1,13 @@
+name: "IDA Ghidra Me"
+author: "rui"
+category: Reverse Engineering
+description: |
+  Just try it
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{i_made_this_chall_at_the_middle_of_competition}
+
+provide: chall

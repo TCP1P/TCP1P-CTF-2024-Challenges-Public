@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - 52688:6000
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"

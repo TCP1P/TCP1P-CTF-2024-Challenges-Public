@@ -1,0 +1,6 @@
+services:
+  luajail:
+    build: .
+    ports:
+      - "20013:8000"
+    restart: always

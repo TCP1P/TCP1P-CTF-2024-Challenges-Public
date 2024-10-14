@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Cars to Cars XSS"
+author: "Dimas"
+category: Web
+description: |
+    Did you know i just make some interesting xor image application with golang and nextjs.
+    Idk if there's an vulnerability, but i'll hope you find it ASAP, because i need to submit it to NASA.
+
+    **URL**: https://{{ .host }}:5435
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+    start: cd dev && docker compose -p web-client-side-programming up -d
+    stop: cd dev && docker compose -p web-client-side-programming down --volumes
+
+provide: ./dist
+
+flags:
+    - TCP1P{idk_if_it's_fun_or_not_but_it's_really_really_looooooooong_challenge_7ccf042c45f06017}

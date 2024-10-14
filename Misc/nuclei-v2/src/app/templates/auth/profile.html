@@ -1,0 +1,21 @@
+{% extends 'home/layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<h2>Profile Page</h2>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ session['username'] }}</td>
+        </tr>
+    </table>
+</div>
+
+{% if session['username'] == 'admin' %}
+    {{ command_output }}
+{% endif %}
+
+{% endblock %}

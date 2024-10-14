@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Guessing Master"
+author: "Agoyy"
+category: Cryptography
+description: |
+  just guess it
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{now_you_are_the_guessing_master}
+
+provide: ./dist

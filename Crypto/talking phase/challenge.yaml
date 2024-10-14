@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "talking phase"
+author: "kisanak"
+category: Cryptography
+description: |
+  Oh no, mitm bad
+
+  Connect: nc {{ .host }} 1965
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p web-talking up --build --detach
+  stop: cd ./src && docker compose -p web-talking down --volumes
+
+flags:
+- TCP1P{smooth_talker_or_talk_smoother}
+
+provide: ./dist

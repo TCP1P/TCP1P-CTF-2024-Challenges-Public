@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  typically-not-a-revenge:
+    build: .
+    restart: on-failure
+    ports:
+      - 9443:5000

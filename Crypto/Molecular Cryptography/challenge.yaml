@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "molecular cryptography"
+author: "BerlianGabriel"
+category: Cryptography
+description: |
+  Tired of RSA and AES? Fret not, the nature has plenty to offer to the cryptography world!
+
+  Wrap the flag with TCP1P{}
+
+  Connect: nc {{ .host }} 1975
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: cd ./src && docker compose -p molecular1 up --build --detach
+  stop: cd ./src && docker compose -p molecular1 down --volumes
+
+flags:
+- TCP1P{That_time_I_got_Chemistry_Olympiad_instead_of_CTF_on_weekends_:(}
+
+provide: ./dist

