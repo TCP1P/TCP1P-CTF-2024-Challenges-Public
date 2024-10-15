@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Baby ERC-20"
+author: "shiro"
+category: Blockchain
+description: |
+  New token standards huh? https://eips.ethereum.org/EIPS/eip-20
+  Connect: http://{{ .host }}:13391
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: docker compose -p blockchain-baby-erc-20 up --build --detach
+  stop: docker compose -p blockchain-baby-erc-20 down --volumes
+
+flags:
+- TCP1P{https://x.com/0xCharlesWang/status/1782350590946799888}
+
+provide: ./contracts

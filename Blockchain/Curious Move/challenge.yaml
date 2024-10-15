@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Curious Move"
+author: "Kiinzu"
+category: Blockchain
+description: |
+  It is just a simple, twisting, elegant single MOVE!
+
+value: 1000
+type: StaticAttachment
+
+flags:
+- TCP1P{a_curious_wanderer_it_seems}
+
+provide: ./CuriousMove.mv

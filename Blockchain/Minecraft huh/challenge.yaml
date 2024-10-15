@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Minecraft huh?"
+author: "kiinzu"
+category: Blockchain
+description: |
+  Say, everyone knows minecraft right?
+  The game about mining block after block after block after block.....
+
+  NOTE!
+  You only need to spawn an instance, no need to press the "Flag" button.
+  The isSolved() function will always return false afterall.
+
+  Connect: http://{{ .host }}:44555
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: docker compose -p blockchain-minecraft-huh up --build --detach
+  stop: docker compose -p blockchain-minecraft-huh down --volumes
+
+flags:
+- TCP1P{running_through_some_blocks_have_you?}

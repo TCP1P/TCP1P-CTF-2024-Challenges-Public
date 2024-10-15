@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../challenge.schema.yaml
+name: "Executive Problem"
+author: "kiinzu"
+category: Blockchain
+description: |
+  If only we managed to climb high enough, maybe we can dethrone someone?
+  Connect: http://{{ .host }}:44455
+
+value: 1000
+type: StaticAttachment
+
+scripts:
+  start: docker compose -p blockchain-executive-proble up --build --detach
+  stop: docker compose -p blockchain-executive-problem down --volumes
+
+flags:
+- TCP1P{Imagine_getting_kicked_out_like_that_by_s0m3_3Xecu7iVE}
+
+provide: ./contracts
