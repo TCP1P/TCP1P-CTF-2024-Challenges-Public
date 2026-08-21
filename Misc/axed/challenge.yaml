@@ -8,19 +8,18 @@ description: |
   **Connection**: `nc {{ .host }} <port>`
 
 value: 1000
-type: StaticContainer
+type: DynamicContainer
 
 scripts:
   start: cd ./src && docker build -t axed .
 
 container:
+  flagTemplate: "TCP1P{axed_81bc5307_[TEAM_HASH]}"
   containerImage: "axed:latest"
   memoryLimit: 256
   cpuCount: 1
   storageLimit: 256
   containerExposePort: 5000
   enableTrafficCapture: true
-flags:
-  - "TCP1P{py7h0n_m374_7r1ck_n3v3r_6375_4x3d_52066ed3d3}"
 
 provide: ./dist

@@ -23,7 +23,7 @@ BLACKLIST = [
     "statx", "name_to_handle_at", "open_by_handle_at",
     "openat2", "close_range",
     "nftw", "ftw",
-    
+
     # Process Management
     "fork", "vfork", "execve", "execvp", "execv", "execl", "execle", "clone", "clone3",
     "setsid", "setpgid", "setpgrp", "kill", "wait", "waitpid", "waitid",
@@ -40,7 +40,7 @@ BLACKLIST = [
     "sched_setattr", "sched_getattr",
     "pidfd_open", "pidfd_send_signal", "pidfd_getfd", "process_mrelease",
     "execveat",
-    
+
     # Memory Management
     "mmap", "mprotect", "munmap", "brk", "sbrk", "mlock", "munlock", "madvise",
     "shmat", "shmdt", "shmctl", "shmget", "semctl", "semget", "semop",
@@ -49,7 +49,7 @@ BLACKLIST = [
     "mbind", "set_mempolicy", "get_mempolicy", "migrate_pages",
     "process_madvise", "userfaultfd", "membarrier",
     "process_vm_readv", "process_vm_writev",
-    
+
     # Network and IPC
     "socket", "bind", "listen", "accept", "connect", "send", "recv", "sendto",
     "recvfrom", "sendmsg", "recvmsg", "getsockopt", "setsockopt", "ioctl",
@@ -57,7 +57,7 @@ BLACKLIST = [
     "sethostname", "setdomainname", "gethostname", "getdomainname",
     "msgget", "msgsnd", "msgrcv", "msgctl",
     "accept4", "recvmmsg", "sendmmsg", "ethernet_multicast_join", "ethernet_multicast_leave",
-    
+
     # System Calls and Kernel Interfaces
     "syscall", "io_submit", "io_getevents", "syslog", "system",
     "seccomp_init", "seccomp_rule_add", "seccomp_load", "seccomp_release",
@@ -68,90 +68,90 @@ BLACKLIST = [
     "init_module", "finit_module", "delete_module",
     "kexec_load", "kexec_file_load",
     "bpf", "perf_event_open",
-    
+
     # File Descriptors and I/O
     "dup", "dup2", "dup3", "fcntl", "fileno", "flock", "lseek",
     "pread64", "pwrite64", "readahead", "sync_file_range",
     "io_setup", "io_destroy", "io_submit", "io_cancel", "io_getevents",
     "epoll_create1", "timerfd_create", "timerfd_settime", "timerfd_gettime",
     "io_uring_setup", "io_uring_enter", "io_uring_register",
-    
+
     # Environment and Security
     "setenv", "unsetenv", "putenv", "getenv", "chroot",
     "capset", "capget",
     "seccomp",
     "cap_get_proc", "cap_set_proc", "cap_from_text", "cap_to_text",
     "security_getenforce", "security_setenforce",
-    
+
     # Signal Handling
     "signal", "sigaction", "sigprocmask", "sigpending", "sigsuspend",
     "tgkill", "tkill", "sigqueue", "sigtimedwait", "sigwaitinfo",
     "rt_sigaction", "rt_sigprocmask", "rt_sigpending", "rt_sigsuspend", "rt_sigtimedwait",
     "rt_sigqueueinfo", "rt_tgsigqueueinfo",
     "sigaltstack", "rt_sigreturn",
-    
+
     # User and Group Management
     "setuid", "setgid", "seteuid", "setegid", "setgroups", "getgroups",
     "setresuid", "setresgid", "setregid", "initgroups", "getresuid", "getresgid",
-    
+
     # Dynamic Loading
     "dlopen", "dlsym", "dlclose", "dlerror", "dlinfo",
-    
+
     # Time-related functions
     "settimeofday", "adjtimex", "clock_settime", "clock_gettime", "clock_getres",
     "clock_nanosleep", "timer_create", "timer_settime", "timer_gettime", "timer_delete",
     "timer_getoverrun",
-    
+
     # Namespace manipulation
     "unshare", "setns",
-    
+
     # Audit system
     "audit_write", "audit_read",
-    
+
     # Extended attributes
     "setxattr", "lsetxattr", "fsetxattr", "getxattr", "lgetxattr", "fgetxattr",
     "listxattr", "llistxattr", "flistxattr", "removexattr", "lremovexattr", "fremovexattr",
-    
+
     # File system operations
     "mount", "umount", "umount2", "pivot_root", "swapon", "swapoff",
     "syncfs", "fsmount", "fsopen", "fsconfig", "fspick",
     "open_tree", "move_mount",
-    
+
     # Tracing and debugging
     "strace", "ltrace",
-    
+
     # Asynchronous I/O
     "aio_read", "aio_write", "lio_listio",
-    
+
     # Shared memory
     "shm_open", "shm_unlink",
-    
+
     # Message queues
     "mq_open", "mq_close", "mq_unlink", "mq_send", "mq_receive", "mq_getattr", "mq_setattr",
     "mq_notify", "mq_timedreceive", "mq_timedsend",
-    
+
     # Keyring functions
     "add_key", "request_key", "keyctl",
-    
+
     # Filesystem quotas
     "quotactl", "quotactl_fd",
-    
+
     # Lightweight process (thread) operations
     "set_robust_list", "get_robust_list", "futex", "futex_waitv", "futex_wake",
-    
+
     # Virtualization-related calls
     "kvm", "vfio",
-    
+
     # Extended Berkeley Packet Filter (eBPF) related
     "bpf_map_create", "bpf_map_lookup_elem", "bpf_map_update_elem", "bpf_map_delete_elem",
     "bpf_prog_load", "bpf_object__open", "bpf_object__load",
-    
+
     # Newer IPC mechanisms
     "memfd_create", "memfd_secret",
-    
+
     # File change monitoring
     "inotify_init", "inotify_add_watch", "inotify_rm_watch", "fanotify_init", "fanotify_mark",
-    
+
     # Miscellaneous
     "getcpu", "kcmp", "getrandom",
     "rseq", "io_pgetevents",
@@ -159,16 +159,16 @@ BLACKLIST = [
     "gethostbyname", "gethostbyaddr", "gethostbyname2", "getservbyname", "getservbyport",
     "getprotobyname", "getprotobynumber", "getnetbyname", "getnetbyaddr",
     "cachestat", "fchmodat2", "map_shadow_stack",
-    
+
     # Container and namespace related
     "mount_setattr",
-    
+
     # Landlock LSM
     "landlock_create_ruleset", "landlock_add_rule", "landlock_restrict_self",
-    
+
     # Memory policy
     "set_mempolicy_home_node",
-    
+
     # Architecture-specific calls (x86)
     "vm86",
 
@@ -188,13 +188,13 @@ def even_more_clean(s):
 def check_for_inline_assembly(code):
     if re.search(r'(__asm__|asm)(\s+volatile)?\s*\(', code):
         return True
-    
+
     if re.search(r':\s*"=\w+"', code):
         return True
-    
+
     if re.search(r'\b(?:__asm|_asm|asm)\s*{', code):
         return True
-    
+
     return False
 
 class SandboxVisitor(c_ast.NodeVisitor):
@@ -334,15 +334,15 @@ int main() {
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
-        
+
         if result.stdout:
             print(result.stdout.decode('latin1'), end='')
-        
+
         if result.stderr:
             print(result.stderr.decode('latin1'), end='')
-        
+
         os.chmod("/tmp/" + hash_code, 0o777)
-        
+
         result = subprocess.run(
             ["/tmp/" + hash_code],
             check=True,
@@ -350,10 +350,10 @@ int main() {
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
-        
+
         if result.stdout:
             print(result.stdout.decode('latin1'), end='')
-        
+
         if result.stderr:
             print(result.stderr.decode('latin1'), end='')
     except subprocess.CalledProcessError as e:
