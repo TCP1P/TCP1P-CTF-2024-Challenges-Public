@@ -210,7 +210,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Misc/cj/challenge.yaml"
+      "manifest": "Jeopardy/Misc/cj-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "axed",
@@ -221,7 +221,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Misc/axed/challenge.yaml"
+      "manifest": "Jeopardy/Misc/axed-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Denis JS",
@@ -232,7 +232,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Misc/denis-js/challenge.yaml"
+      "manifest": "Jeopardy/Misc/denis-js-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Denis JS (Fixed)",
@@ -243,7 +243,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Web/denis-js-fixed/challenge.yaml"
+      "manifest": "Jeopardy/Web/denis-js-fixed-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Feedback",
@@ -265,7 +265,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Misc/functional/challenge.yaml"
+      "manifest": "Jeopardy/Misc/functional-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "nuclei-v2",
@@ -285,7 +285,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Misc/sym/challenge.yaml"
+      "manifest": "Jeopardy/Misc/sym-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "typically not a revenge",
@@ -296,7 +296,7 @@
       "warnings": [
         "no literal flag could be recovered; organizer review required"
       ],
-      "manifest": "Jeopardy/Misc/typically-not-a-revenge/challenge.yaml"
+      "manifest": "Jeopardy/Misc/typically-not-a-revenge-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Welcome",
