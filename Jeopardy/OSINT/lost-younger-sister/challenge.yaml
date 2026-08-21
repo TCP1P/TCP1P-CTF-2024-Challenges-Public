@@ -1,0 +1,27 @@
+name: Lost Younger Sister
+author: Jieyab89
+description: 'Help Jieyab find the Violet, please read the attachment
+
+
+  The flag is is name of the bus stop in the photo
+
+
+  Example Flag : TCP1P{KARIMUN JAWA 11 A}
+
+
+  *Pro tips: Check the case sensitive! Check the street view
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Lost%20Younger%20Sister).'
+type: StaticAttachment
+category: OSINT
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+hints:
+- check the street view
+flags:
+- TCP1P{JPO SMP MUHAMMADIYAH 10 B}
+provide: dist

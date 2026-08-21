@@ -1,0 +1,22 @@
+name: The Investigator
+author: Jieyab89
+description: 'Help Jieyab found the newspaper. When was this newspaper published?
+
+
+  The flag name is date TCP1P{Date Month Year}
+
+
+  Example TCP1P{29 January 2001}
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/The%20Investigator).'
+type: StaticAttachment
+category: OSINT
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{17 December 1983}
+provide: dist

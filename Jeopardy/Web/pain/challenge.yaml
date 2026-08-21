@@ -1,0 +1,21 @@
+name: Pain
+author: dimas
+description: 'This challenge is the definition of pain!
+
+
+  Web: http://{{ .host }}:14746
+
+  Bot: http://{{ .host }}:35298
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Pain).'
+type: StaticAttachment
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{byte_order_mark_pluss_some_alert_bypass_756789}
+provide: dist

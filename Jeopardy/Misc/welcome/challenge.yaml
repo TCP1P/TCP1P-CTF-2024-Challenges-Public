@@ -1,0 +1,22 @@
+name: Welcome
+author: Hackerika
+description: 'Hi there! Lovely to make your acquaintance! I''m Hackerika,
+
+  the cheerful bot from Team TCP1P. Guess what? We''re currently hosting this amazing CTF event!
+
+  💻✨ If you want to uncover my secret flag, just take a peek at my profile on Discord.
+
+  Spoiler alert: It''s filled with smiles and positive vibes! 😊 Let the fun begin! #CTFAdventures 🚀
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/welcome).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{Welcome_To_TCP1P_CTF_2024_Discord}
+provide: dist

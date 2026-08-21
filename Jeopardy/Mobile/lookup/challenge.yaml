@@ -1,0 +1,29 @@
+name: LookUp
+author: Dimas Maulana
+description: 'Hi guys, i just make my first Mobile app, can you check it?
+
+
+  ---
+
+
+  The infrastructure being used is based on our Mobile POC Tester (https://github.com/TCP1P/Mobile-POC-Tester).
+
+  You will need to create your exploit application that will be executed in the server.
+
+  You can check `client_dist.py` for more information on how the automation for this challenge runs.
+
+
+  **POC Tester**: http://45.32.119.201:5000/
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/LookUp).'
+type: StaticAttachment
+category: Mobile
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{basic_deserialization_in_android_is_awssome_485846283}
+provide: dist

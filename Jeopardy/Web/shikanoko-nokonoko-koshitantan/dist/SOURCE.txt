@@ -1,0 +1,5 @@
+Shikanoko nokonoko koshitantan!
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Shikanoko%20nokonoko%20koshitantan%21
+
+Local archive note: attachment omitted to stay below the repository size limit.

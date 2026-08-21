@@ -1,0 +1,31 @@
+name: Shikanoko nokonoko koshitantan!
+author: dimas
+description: 'Shikanoko nokonoko koshitantan
+
+
+  Shikanoko nokonoko koshitantan
+
+
+  Shikanoko nokonoko koshitantan
+
+
+  Shikanoko nokonoko koshitantan
+
+
+  (Nun! Nun!)
+
+
+  Connect: http://{{ .host }}:8547
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Shikanoko%20nokonoko%20koshitantan%21).'
+type: StaticAttachment
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{shikanoko_nokonoko_koshitantan_why_even_bother_for_a_little_race_condition}
+provide: dist

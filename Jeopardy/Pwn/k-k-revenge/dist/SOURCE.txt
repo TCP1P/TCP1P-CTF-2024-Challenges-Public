@@ -1,0 +1,5 @@
+K (K-Revenge)
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/K-Revenge
+
+Local archive note: attachment omitted to stay below the repository size limit.

@@ -1,0 +1,23 @@
+name: Inju's Gambit
+author: Kiinzu
+description: 'Inju owns all the things in the area, waiting for one worthy challenger to emerge.
+
+  Rumor said, that there many ways from many different angle to tackle Inju.
+
+  Are you the Challenger worthy to oppose him?
+
+
+  Connect: http://{{ .host }}:44445
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Inju%27s%20Gambit).'
+type: StaticAttachment
+category: Blockchain
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{is_it_really_a_gambit_tho_its_not_that_hard}
+provide: dist

@@ -1,0 +1,16 @@
+name: Serial
+author: Marc
+description: '`User:B74A-929C-666F-0FF5`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Serial).'
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{C3rt1fied_S3r14l_Cr4ck3r!}
+provide: dist

@@ -1,0 +1,5 @@
+Average Flag Checker
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Average%20Flag%20Checker
+
+Local archive note: attachment omitted to stay below the repository size limit.

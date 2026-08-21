@@ -1,0 +1,24 @@
+name: Denis JS (Fixed)
+author: Dimas & ayapi
+description: 'There was a trivial bug on our previous calculator''s code. Hopefully, this time there won''t be a any issues
+
+
+  **Connection**: `nc {{ .host }} <port>`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js%20%28fixed%29).'
+type: StaticContainer
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{hopefully_the_code_would_be_more_likely_safe_by_now}
+container:
+  memoryLimit: 256
+  cpuCount: 1
+  exposePort: 6000
+  enableTrafficCapture: false
+  enableSharedContainer: false

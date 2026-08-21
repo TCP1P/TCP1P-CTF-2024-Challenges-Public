@@ -1,0 +1,5 @@
+Password Manager 2.0
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/Password%20Manager%202.0
+
+Local archive note: attachment omitted to stay below the repository size limit.

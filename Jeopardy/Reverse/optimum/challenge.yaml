@@ -1,0 +1,16 @@
+name: Optimum
+author: aseng
+description: 'Not an optimize-me challenge, just an "optimized" version of certain language. Download the attachment from `https://mega.nz/file/MAgwGSAI#Inlx591Iu-FUVjHspMTk3W5bkvFmOZQvyP-i3xpD_74` and run `./server -H <yourport> -f 1` , thus you can visit your favorite `http://localhost:yourport`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Optimum).'
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{u_9ot_m3_GG!}
+provide: dist

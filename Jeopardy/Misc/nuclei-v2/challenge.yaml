@@ -1,0 +1,19 @@
+name: nuclei-v2
+author: daffainfo
+description: 'Last year, I made the challenge too easy. Now I''m making it harder.
+
+
+  Connect: http://{{ .host }}:20012
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/nuclei-v2).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{I_b3li3v3_thi5_i5_h4rd3r_th4n_l45t_y34r}
+provide: dist

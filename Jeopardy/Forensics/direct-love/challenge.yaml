@@ -1,0 +1,16 @@
+name: Direct-Love
+author: C2uru
+description: 'My fiancée, Mizuhara Chizuru, lent her laptop to one of her friends. Her friend downloaded files using a peer-to-peer protocol on Windows. However, not long after, one of Chizuru''s important documents went missing. There''s always something with my fiancée :D
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Direct-Love).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{It_tOOk_4_lOt_Of_s4cr1f1ces_fOr_Ch1zUrU_hUh?_It's_4ctU4lly_nOth1ng_fOr_me_4s_her_f14ncé.}
+provide: dist

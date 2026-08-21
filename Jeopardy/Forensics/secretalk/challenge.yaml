@@ -1,0 +1,22 @@
+name: SecreTalk
+author: C2uru
+description: 'Although I managed to find out about my fiancée''s missing document, I''m afraid this might be some kind of attack specifically targeting my family. So, I''ve been investigating several cases that more or less have indications of the same threat actor as the one who stole my fiancée''s document yesterday. Using this artifact, I''m hoping to find out the conversation of one of the strong suspects who is behind all of this. Can you help me analyze some of the interesting things here?
+
+
+  Download Here: https://drive.google.com/drive/u/3/folders/1p1HHkimi6U6gRZzQX_YxzBjMKowIMRwz
+
+
+  Password: TWl6dWhhcmFjaGl6dXJ1e3doeV95b3VfZGVjb2RlX3RoaXM/fQ==
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/SecreTalk).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{w0w_y0u_m4n4ged_t0_get_this_d0cument.I_4s_the_fi4ncé_0f_mizuh4r4_chizuru_4ppreci4te_y0ur_eff0rts_GGWP}
+provide: dist

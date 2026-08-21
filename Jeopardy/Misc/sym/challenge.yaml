@@ -1,0 +1,24 @@
+name: sym
+author: ayapi
+description: 'Another Py2-jail, yet only symbol allowed...
+
+
+  **Connection**: `nc {{ .host }} <port>`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/sym).'
+type: StaticContainer
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{r3pr_b4ck71ck_byp455_f0r_7h3_w1n_1b9bffa666}
+container:
+  memoryLimit: 256
+  cpuCount: 1
+  exposePort: 5000
+  enableTrafficCapture: true
+  enableSharedContainer: false

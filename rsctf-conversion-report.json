@@ -1,0 +1,670 @@
+{
+  "sourceRepository": "TCP1P/TCP1P-CTF-2024-Challenges-Public",
+  "targetRepository": "TCP1P/TCP1P-CTF-2024-Challenges-Public",
+  "private": false,
+  "events": [
+    "TCP1P CTF 2024"
+  ],
+  "challenges": [
+    {
+      "name": "Curious Move",
+      "category": "Blockchain",
+      "source": "Blockchain/Curious Move/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Curious%20Move",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/curious-move/challenge.yaml"
+    },
+    {
+      "name": "Executive Problem",
+      "category": "Blockchain",
+      "source": "Blockchain/Executive Problem/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Executive%20Problem",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/executive-problem/challenge.yaml"
+    },
+    {
+      "name": "Inju's Gambit",
+      "category": "Blockchain",
+      "source": "Blockchain/Inju's Gambit/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Inju%27s%20Gambit",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/inju-s-gambit/challenge.yaml"
+    },
+    {
+      "name": "Minecraft huh?",
+      "category": "Blockchain",
+      "source": "Blockchain/Minecraft huh/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Minecraft%20huh",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Blockchain/minecraft-huh/challenge.yaml"
+    },
+    {
+      "name": "Baby ERC-20",
+      "category": "Blockchain",
+      "source": "Blockchain/babyerc20/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/babyerc20",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/baby-erc-20/challenge.yaml"
+    },
+    {
+      "name": "Unsolveable Money Captcha",
+      "category": "Blockchain",
+      "source": "Blockchain/unsolveable-money-captcha/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/unsolveable-money-captcha",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/unsolveable-money-captcha/challenge.yaml"
+    },
+    {
+      "name": "Guessing Master",
+      "category": "Crypto",
+      "source": "Crypto/Guessing Master/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Guessing%20Master",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/guessing-master/challenge.yaml"
+    },
+    {
+      "name": "molecular cryptography",
+      "category": "Crypto",
+      "source": "Crypto/Molecular Cryptography/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Molecular%20Cryptography",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/molecular-cryptography/challenge.yaml"
+    },
+    {
+      "name": "molecular cryptography revenge",
+      "category": "Crypto",
+      "source": "Crypto/Molecular Cryptography Revenge/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Molecular%20Cryptography%20Revenge",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/molecular-cryptography-revenge/challenge.yaml"
+    },
+    {
+      "name": "TCP51Prime",
+      "category": "Crypto",
+      "source": "Crypto/TCP51Prime/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/TCP51Prime",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/tcp51prime/challenge.yaml"
+    },
+    {
+      "name": "That one RSA challenge",
+      "category": "Crypto",
+      "source": "Crypto/rsa/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/rsa",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/that-one-rsa-challenge/challenge.yaml"
+    },
+    {
+      "name": "talking phase",
+      "category": "Crypto",
+      "source": "Crypto/talking phase/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/talking%20phase",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/talking-phase/challenge.yaml"
+    },
+    {
+      "name": "What's the Worst That Could Happen",
+      "category": "Crypto",
+      "source": "Crypto/whats the worst that could happen/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/whats%20the%20worst%20that%20could%20happen",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/what-s-the-worst-that-could-happen/challenge.yaml"
+    },
+    {
+      "name": "Direct-Love",
+      "category": "Forensics",
+      "source": "Forensics/Direct-Love/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Direct-Love",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Forensics/direct-love/challenge.yaml"
+    },
+    {
+      "name": "Doxxed",
+      "category": "Forensics",
+      "source": "Forensics/Doxxed/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Doxxed",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Forensics/doxxed/challenge.yaml"
+    },
+    {
+      "name": "EncryptDecryptFile",
+      "category": "Forensics",
+      "source": "Forensics/EncryptDecryptFile/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/EncryptDecryptFile",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Forensics/encryptdecryptfile/challenge.yaml"
+    },
+    {
+      "name": "Forevncrypt",
+      "category": "Forensics",
+      "source": "Forensics/Forevncrypt/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Forevncrypt",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Forensics/forevncrypt/challenge.yaml"
+    },
+    {
+      "name": "Lost Progress",
+      "category": "Forensics",
+      "source": "Forensics/Lost Progress/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Lost%20Progress",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Forensics/lost-progress/challenge.yaml"
+    },
+    {
+      "name": "SecreTalk",
+      "category": "Forensics",
+      "source": "Forensics/SecreTalk/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/SecreTalk",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Forensics/secretalk/challenge.yaml"
+    },
+    {
+      "name": "Skibidi Format",
+      "category": "Forensics",
+      "source": "Forensics/Skibidi Format/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Skibidi%20Format",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Forensics/skibidi-format/challenge.yaml"
+    },
+    {
+      "name": "Sus",
+      "category": "Forensics",
+      "source": "Forensics/Sus/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Sus",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Forensics/sus/challenge.yaml"
+    },
+    {
+      "name": "CJ",
+      "category": "Misc",
+      "source": "Misc/CJ/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/CJ",
+      "type": "StaticAttachment",
+      "warnings": [
+        "container package was not safely portable; imported as an archived attachment"
+      ],
+      "manifest": "Jeopardy/Misc/cj/challenge.yaml"
+    },
+    {
+      "name": "axed",
+      "category": "Misc",
+      "source": "Misc/axed/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/axed",
+      "type": "StaticContainer",
+      "warnings": [],
+      "manifest": "Jeopardy/Misc/axed/challenge.yaml"
+    },
+    {
+      "name": "Denis JS",
+      "category": "Misc",
+      "source": "Misc/denis-js/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js",
+      "type": "StaticContainer",
+      "warnings": [
+        "flag recovered from the archived challenge tree",
+        "dynamic container lacked a supported flag template; converted to StaticContainer"
+      ],
+      "manifest": "Jeopardy/Misc/denis-js/challenge.yaml"
+    },
+    {
+      "name": "Denis JS (Fixed)",
+      "category": "Web",
+      "source": "Misc/denis-js (fixed)/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js%20%28fixed%29",
+      "type": "StaticContainer",
+      "warnings": [],
+      "manifest": "Jeopardy/Web/denis-js-fixed/challenge.yaml"
+    },
+    {
+      "name": "Feedback",
+      "category": "Misc",
+      "source": "Misc/feedback/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/feedback",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Misc/feedback/challenge.yaml"
+    },
+    {
+      "name": "functional",
+      "category": "Misc",
+      "source": "Misc/functional/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/functional",
+      "type": "StaticContainer",
+      "warnings": [
+        "flag recovered from the archived challenge tree",
+        "dynamic container lacked a supported flag template; converted to StaticContainer"
+      ],
+      "manifest": "Jeopardy/Misc/functional/challenge.yaml"
+    },
+    {
+      "name": "nuclei-v2",
+      "category": "Misc",
+      "source": "Misc/nuclei-v2/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/nuclei-v2",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Misc/nuclei-v2/challenge.yaml"
+    },
+    {
+      "name": "sym",
+      "category": "Misc",
+      "source": "Misc/sym/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/sym",
+      "type": "StaticContainer",
+      "warnings": [],
+      "manifest": "Jeopardy/Misc/sym/challenge.yaml"
+    },
+    {
+      "name": "typically not a revenge",
+      "category": "Misc",
+      "source": "Misc/typically not a revenge/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/typically%20not%20a%20revenge",
+      "type": "StaticContainer",
+      "warnings": [],
+      "manifest": "Jeopardy/Misc/typically-not-a-revenge/challenge.yaml"
+    },
+    {
+      "name": "Welcome",
+      "category": "Misc",
+      "source": "Misc/welcome/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/welcome",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Misc/welcome/challenge.yaml"
+    },
+    {
+      "name": "Interfaces",
+      "category": "Mobile",
+      "source": "Mobile/Interfaces/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/Interfaces",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Mobile/interfaces/challenge.yaml"
+    },
+    {
+      "name": "LookDown",
+      "category": "Mobile",
+      "source": "Mobile/LookDown/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/LookDown",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Mobile/lookdown/challenge.yaml"
+    },
+    {
+      "name": "LookUp",
+      "category": "Mobile",
+      "source": "Mobile/LookUp/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/LookUp",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Mobile/lookup/challenge.yaml"
+    },
+    {
+      "name": "Password Manager 2.0",
+      "category": "Mobile",
+      "source": "Mobile/Password Manager 2.0/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/Password%20Manager%202.0",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Mobile/password-manager-2-0/challenge.yaml"
+    },
+    {
+      "name": "Journalist",
+      "category": "OSINT",
+      "source": "OSINT/Journalist/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Journalist",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/OSINT/journalist/challenge.yaml"
+    },
+    {
+      "name": "Lost Younger Sister",
+      "category": "OSINT",
+      "source": "OSINT/Lost Younger Sister/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Lost%20Younger%20Sister",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/OSINT/lost-younger-sister/challenge.yaml"
+    },
+    {
+      "name": "Night Live at Indonesian",
+      "category": "OSINT",
+      "source": "OSINT/Night Live at Indonesian/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Night%20Live%20at%20Indonesian",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/OSINT/night-live-at-indonesian/challenge.yaml"
+    },
+    {
+      "name": "Thats Him",
+      "category": "OSINT",
+      "source": "OSINT/That’s Him/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/That%E2%80%99s%20Him",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/OSINT/thats-him/challenge.yaml"
+    },
+    {
+      "name": "The Investigator",
+      "category": "OSINT",
+      "source": "OSINT/The Investigator/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/The%20Investigator",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/OSINT/the-investigator/challenge.yaml"
+    },
+    {
+      "name": "The Pentagon",
+      "category": "OSINT",
+      "source": "OSINT/The Pentagon/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/The%20Pentagon",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/OSINT/the-pentagon/challenge.yaml"
+    },
+    {
+      "name": "Bandit",
+      "category": "OSINT",
+      "source": "OSINT/bandit/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/bandit",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/OSINT/bandit/challenge.yaml"
+    },
+    {
+      "name": "Amnesia",
+      "category": "Pwn",
+      "source": "Pwn/Amnesia/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Amnesia",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Pwn/amnesia/challenge.yaml"
+    },
+    {
+      "name": "Baby CFHP",
+      "category": "Pwn",
+      "source": "Pwn/Baby CFHP/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Baby%20CFHP",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/baby-cfhp/challenge.yaml"
+    },
+    {
+      "name": "K",
+      "category": "Pwn",
+      "source": "Pwn/K/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/K",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Pwn/k/challenge.yaml"
+    },
+    {
+      "name": "K (K-Revenge)",
+      "category": "Pwn",
+      "source": "Pwn/K-Revenge/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/K-Revenge",
+      "type": "StaticAttachment",
+      "warnings": [
+        "duplicate legacy display name disambiguated with its source directory",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Pwn/k-k-revenge/challenge.yaml"
+    },
+    {
+      "name": "Lua Jail",
+      "category": "Pwn",
+      "source": "Pwn/Lua Jail/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Lua%20Jail",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Pwn/lua-jail/challenge.yaml"
+    },
+    {
+      "name": "PyCRUD",
+      "category": "Pwn",
+      "source": "Pwn/PyCRUD/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/PyCRUD",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/pycrud/challenge.yaml"
+    },
+    {
+      "name": "Reading Test",
+      "category": "Pwn",
+      "source": "Pwn/Reading Test/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Reading%20Test",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/reading-test/challenge.yaml"
+    },
+    {
+      "name": "sim",
+      "category": "Pwn",
+      "source": "Pwn/sim/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/sim",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/sim/challenge.yaml"
+    },
+    {
+      "name": "Average Flag Checker",
+      "category": "Reverse",
+      "source": "Reverse/Average Flag Checker/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Average%20Flag%20Checker",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/average-flag-checker/challenge.yaml"
+    },
+    {
+      "name": "IDA Ghidra Me",
+      "category": "Reverse",
+      "source": "Reverse/IDAGhidraMe/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/IDAGhidraMe",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/ida-ghidra-me/challenge.yaml"
+    },
+    {
+      "name": "Imperfect Guesser",
+      "category": "Reverse",
+      "source": "Reverse/Imperfect Guesser/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Imperfect%20Guesser",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/imperfect-guesser/challenge.yaml"
+    },
+    {
+      "name": "Nyann",
+      "category": "Reverse",
+      "source": "Reverse/Nyann/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Nyann",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/nyann/challenge.yaml"
+    },
+    {
+      "name": "Optimum",
+      "category": "Reverse",
+      "source": "Reverse/Optimum/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Optimum",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Reverse/optimum/challenge.yaml"
+    },
+    {
+      "name": "Serial",
+      "category": "Reverse",
+      "source": "Reverse/Serial/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Serial",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/serial/challenge.yaml"
+    },
+    {
+      "name": "WannaFlag",
+      "category": "Reverse",
+      "source": "Reverse/WannaFlag/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/WannaFlag",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/wannaflag/challenge.yaml"
+    },
+    {
+      "name": "Cars to Cars XSS",
+      "category": "Web",
+      "source": "Web/Client Side Programming/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Client%20Side%20Programming",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/cars-to-cars-xss/challenge.yaml"
+    },
+    {
+      "name": "Hacked",
+      "category": "Web",
+      "source": "Web/Hacked/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Hacked",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/hacked/challenge.yaml"
+    },
+    {
+      "name": "Hacked-V2",
+      "category": "Web",
+      "source": "Web/Hacked-V2/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Hacked-V2",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/hacked-v2/challenge.yaml"
+    },
+    {
+      "name": "Pain",
+      "category": "Web",
+      "source": "Web/Pain/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Pain",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/pain/challenge.yaml"
+    },
+    {
+      "name": "Shikanoko nokonoko koshitantan!",
+      "category": "Web",
+      "source": "Web/Shikanoko nokonoko koshitantan!/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Shikanoko%20nokonoko%20koshitantan%21",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/shikanoko-nokonoko-koshitantan/challenge.yaml"
+    },
+    {
+      "name": "ez-web",
+      "category": "Web",
+      "source": "Web/ez-web/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/ez-web",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/ez-web/challenge.yaml"
+    },
+    {
+      "name": "Multiplication",
+      "category": "Web",
+      "source": "Web/multiplication/challenge.yaml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/multiplication",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/multiplication/challenge.yaml"
+    },
+    {
+      "name": "pressword-v2",
+      "category": "Web",
+      "source": "Web/pressword-v2/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/pressword-v2",
+      "type": "StaticAttachment",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/pressword-v2/challenge.yaml"
+    }
+  ]
+}

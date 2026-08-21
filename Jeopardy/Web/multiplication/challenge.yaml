@@ -1,0 +1,19 @@
+name: Multiplication
+author: daffainfo
+description: 'Multiplication is very easy, right? right??
+
+
+  Connect: http://{{ .host }}:10011
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/multiplication).'
+type: StaticAttachment
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{1n5p1R3d_by_l1V30v3rFloW_but_1_4dD3d_mor3_f1lt3rs_H4haH4h4}
+provide: dist

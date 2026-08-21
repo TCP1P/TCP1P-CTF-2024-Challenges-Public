@@ -1,0 +1,24 @@
+name: functional
+author: ayapi
+description: 'Do you think the code is still functional?
+
+
+  **Connection**: `nc {{ .host }} <port>`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/functional).'
+type: StaticContainer
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{h3ll0_from_jailCTF_1_w0nder_if__1t_s_st1ll_function4l_th0ugh_fb91f07abf}
+container:
+  memoryLimit: 256
+  cpuCount: 1
+  exposePort: 5000
+  enableTrafficCapture: true
+  enableSharedContainer: false

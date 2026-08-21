@@ -1,0 +1,24 @@
+name: axed
+author: ayapi
+description: 'Let''s turn back time and enjoy a lovely Python 2 jail, shall we?
+
+
+  **Connection**: `nc {{ .host }} <port>`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/axed).'
+type: StaticContainer
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{py7h0n_m374_7r1ck_n3v3r_6375_4x3d_52066ed3d3}
+container:
+  memoryLimit: 256
+  cpuCount: 1
+  exposePort: 5000
+  enableTrafficCapture: true
+  enableSharedContainer: false

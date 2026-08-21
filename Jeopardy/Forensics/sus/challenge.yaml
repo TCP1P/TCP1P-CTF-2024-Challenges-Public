@@ -1,0 +1,16 @@
+name: Sus
+author: daffainfo
+description: 'I received this file from my boss''s email, but when I opened it, suddenly all my files got encrypted and I got blackmailed :(((. At least please help me recover my files
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Sus).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{thank_g0ddd_youre_able_to_decrypt_my_files}
+provide: dist

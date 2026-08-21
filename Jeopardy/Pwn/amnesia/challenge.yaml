@@ -1,0 +1,18 @@
+name: Amnesia
+author: itoid
+description: 'Can you even trust your own memory?
+
+  **Connection**: `nc {{ .host }} 20037`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Amnesia).'
+type: StaticAttachment
+category: Pwn
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{AMN3S14_1S_R34LLL!!!_cf212fee2f04d5790aa170e94d3736dc}
+provide: dist

@@ -1,0 +1,19 @@
+name: ez-web
+author: kiseki
+description: 'hope you enjoy this.
+
+
+  Connect: http://{{ .host }}:10017
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/ez-web).'
+type: StaticAttachment
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{web_c4che_d3cept1on_rev1sited}
+provide: dist

@@ -1,0 +1,21 @@
+name: Cars to Cars XSS
+author: Dimas
+description: 'Did you know i just make some interesting xor image application with golang and nextjs.
+
+  Idk if there''s an vulnerability, but i''ll hope you find it ASAP, because i need to submit it to NASA.
+
+
+  **URL**: https://{{ .host }}:5435
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Client%20Side%20Programming).'
+type: StaticAttachment
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{idk_if_it's_fun_or_not_but_it's_really_really_looooooooong_challenge_7ccf042c45f06017}
+provide: dist

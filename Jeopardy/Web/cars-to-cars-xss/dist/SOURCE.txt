@@ -1,0 +1,5 @@
+Cars to Cars XSS
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Client%20Side%20Programming
+
+Local archive note: attachment omitted to stay below the repository size limit.

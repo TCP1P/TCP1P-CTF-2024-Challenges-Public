@@ -1,0 +1,11 @@
+name: Nyann
+author: aseng
+description: "Hackerika leaves her neko pet, Nyann in her house and it is your job to find the food for it! \nPrerequisite -> `https://nekovm.org/download/`\n\n---\nHistorical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Nyann)."
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{miamaow_c4t_1s_lyf3_n3k0_chan_is_4ever}
+provide: dist

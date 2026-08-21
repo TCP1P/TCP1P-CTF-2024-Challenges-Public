@@ -1,0 +1,28 @@
+name: Journalist
+author: Jieyab89
+description: 'Oh no, help Jieyab to Found this video
+
+
+  Link vidio :  https://drive.google.com/file/d/18zOX75x9gjITueQmwv0Bl9iffdQSYi5A/view?usp=sharing
+
+
+  Hint : Flag is time or date the video was uploaded
+
+
+  *Pro tips: Convert your time in WIB ( UTC+7) on the date metadata
+
+
+  Example TCP1P{19 Dec 2011}
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Journalist).'
+type: StaticAttachment
+category: OSINT
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{2 Apr 2024}
+provide: dist

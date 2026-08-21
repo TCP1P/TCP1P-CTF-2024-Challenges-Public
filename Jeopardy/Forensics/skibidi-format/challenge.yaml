@@ -1,0 +1,16 @@
+name: Skibidi Format
+author: Suisayy
+description: 'So my friend just made a new image format and asked me to give him a test file, so I gave him my favorite png of all time. But the only thing I receive back is just my image with his new format and its "specification" file, don''t know what that is. Can you help me read this file?
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Skibidi%20Format).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{S3ems_L1k3_Sk1b1dI_T0il3t_h4s_C0nsUm3d_My_fr13nD_U72Syd6}
+provide: dist

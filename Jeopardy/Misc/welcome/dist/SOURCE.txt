@@ -1,0 +1,5 @@
+Welcome
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/welcome
+
+Local archive note: no player attachment files were present.

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  functional:
+    build: .
+    restart: on-failure
+    ports:
+      - 9041:5000

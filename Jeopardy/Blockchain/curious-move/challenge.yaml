@@ -1,0 +1,16 @@
+name: Curious Move
+author: Kiinzu
+description: 'It is just a simple, twisting, elegant single MOVE!
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Curious%20Move).'
+type: StaticAttachment
+category: Blockchain
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{a_curious_wanderer_it_seems}
+provide: dist

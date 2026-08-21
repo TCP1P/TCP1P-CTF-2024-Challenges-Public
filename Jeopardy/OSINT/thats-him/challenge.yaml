@@ -1,0 +1,25 @@
+name: Thats Him
+author: Jieyab89
+description: 'Help Jieyab find Julient
+
+
+  The flag is country, prefecture, city, district/area, postal code
+
+
+  Exaample: TCP1P{Japan, Tokyo, Katsushika, Tateishi, 124-0012}
+
+
+  *Pro tips: Check the case sensitive. Make sure you have searched list of postal codes that area or the district
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/That%E2%80%99s%20Him).'
+type: StaticAttachment
+category: OSINT
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{Japan, Okinawa, Uruma, Ishikawa Akasaki, 904-1103}
+provide: dist

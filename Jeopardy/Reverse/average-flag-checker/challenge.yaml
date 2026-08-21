@@ -1,0 +1,16 @@
+name: Average Flag Checker
+author: ryuk
+description: 'Let''s do this warm up flag checker
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Average%20Flag%20Checker).'
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{h0w_d1d_y0u_50lv3_th1s_ch4ll?_9b14fa}
+provide: dist

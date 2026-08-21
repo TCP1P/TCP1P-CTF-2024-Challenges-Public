@@ -1,0 +1,19 @@
+name: Lua Jail
+author: rui
+description: 'Once was 0day...
+
+
+  **Connection**: `http://{{ .host }}/20013`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Lua%20Jail).'
+type: StaticAttachment
+category: Pwn
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{escape_lua_vm_more_like_escape_python_jail_isnt_it??}
+provide: dist

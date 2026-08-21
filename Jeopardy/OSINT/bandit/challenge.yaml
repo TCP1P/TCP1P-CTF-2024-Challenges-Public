@@ -1,0 +1,22 @@
+name: Bandit
+author: Jieyab89
+description: 'An Jieyab as informant took a photo of a vehicle, can you find the location?
+
+
+  The flag is name the location and date example TCP1P{Town, Coutry. Month Year}
+
+
+  Example : TCP1P{Yogyakarta, Indonesia. June 2010}
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/bandit).'
+type: StaticAttachment
+category: OSINT
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{Malang, Indonesia. October 2019}
+provide: dist

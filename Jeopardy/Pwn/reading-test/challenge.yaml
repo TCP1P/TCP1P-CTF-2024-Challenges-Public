@@ -1,0 +1,19 @@
+name: Reading Test
+author: msfir
+description: 'Can you pass my reading test?
+
+
+  **Connection**: `nc {{ .host }} 55550`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Reading%20Test).'
+type: StaticAttachment
+category: Pwn
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{i_give_you_full_marks_for_this_test}
+provide: dist

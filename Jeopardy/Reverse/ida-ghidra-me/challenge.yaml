@@ -1,0 +1,16 @@
+name: IDA Ghidra Me
+author: rui
+description: 'Just try it
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/IDAGhidraMe).'
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{i_made_this_chall_at_the_middle_of_competition}
+provide: dist
