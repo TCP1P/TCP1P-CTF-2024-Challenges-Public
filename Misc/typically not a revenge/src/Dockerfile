@@ -8,4 +8,4 @@ COPY jail.py run
 RUN chmod 755 run
 
 EXPOSE 5000
-CMD echo "TCP1P{def1nitely_n0t_4_r3venge_chall_fr0m_older_ctf_d0acf187ae}" > /flag-$(head -c8 /dev/urandom | md5sum | tr -cd "[:alnum:]") && socat -dd TCP4-LISTEN:5000,fork,reuseaddr EXEC:"python3 -S ./run",su=nobody
+CMD test -n "$GZCTF_FLAG" && flag_path=/flag-$(head -c8 /dev/urandom | md5sum | tr -cd "[:alnum:]") && printf '%s\n' "$GZCTF_FLAG" > "$flag_path" && unset GZCTF_FLAG && exec socat -dd TCP4-LISTEN:5000,fork,reuseaddr EXEC:"python3 -S ./run",su=nobody

@@ -12,7 +12,7 @@ scripts:
   start: cd ./src && docker build -t denis-js .
 
 container:
-  flagTemplate: "TCP1P{hope_nagi_didnt_see_i_use_his_payload_to_solve_this_challenge}"
+  flagTemplate: "TCP1P{denis_js_323421bf_[TEAM_HASH]}"
   containerImage: "denis-js:latest"
   memoryLimit: 256
   cpuCount: 1

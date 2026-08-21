@@ -8,19 +8,18 @@ description: |
   **Connection**: `nc {{ .host }} <port>`
 
 value: 1000
-type: StaticContainer
+type: DynamicContainer
 
 scripts:
   start: cd ./src && docker build -t denis-js-fixed .
 
 container:
+  flagTemplate: "TCP1P{denis_js_fixed_a29718c0_[TEAM_HASH]}"
   containerImage: "denis-js-fixed:latest"
   memoryLimit: 256
   cpuCount: 1
   storageLimit: 256
   containerExposePort: 6000
   enableTrafficCapture: false
-flags:
- - TCP1P{hopefully_the_code_would_be_more_likely_safe_by_now}
 
 provide: ./dist
