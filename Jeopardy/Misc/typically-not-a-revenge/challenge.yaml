@@ -9,16 +9,14 @@ description: 'How do you typically escape from a Python jail?
   ---
 
   Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/typically%20not%20a%20revenge).'
-type: StaticContainer
+type: DynamicContainer
 category: Misc
 minScoreRate: 0.25
 difficulty: 5
 disableBloodBonus: false
-flags:
-- TCP1P{def1nitely_n0t_4_r3venge_chall_fr0m_older_ctf_d0acf187ae}
+flagTemplate: TCP1P{typically_not_a_revenge_c1b65605_[TEAM_HASH]}
 container:
   memoryLimit: 256
   cpuCount: 1
   exposePort: 5000
   enableTrafficCapture: true
-  enableSharedContainer: false

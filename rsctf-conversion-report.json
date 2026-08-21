@@ -206,9 +206,9 @@
       "category": "Misc",
       "source": "Misc/CJ/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/CJ",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
       "warnings": [
-        "container package was not safely portable; imported as an archived attachment"
+        "no literal flag could be recovered; organizer review required"
       ],
       "manifest": "Jeopardy/Misc/cj/challenge.yaml"
     },
@@ -217,8 +217,10 @@
       "category": "Misc",
       "source": "Misc/axed/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/axed",
-      "type": "StaticContainer",
-      "warnings": [],
+      "type": "DynamicContainer",
+      "warnings": [
+        "no literal flag could be recovered; organizer review required"
+      ],
       "manifest": "Jeopardy/Misc/axed/challenge.yaml"
     },
     {
@@ -226,10 +228,9 @@
       "category": "Misc",
       "source": "Misc/denis-js/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js",
-      "type": "StaticContainer",
+      "type": "DynamicContainer",
       "warnings": [
-        "flag recovered from the archived challenge tree",
-        "dynamic container lacked a supported flag template; converted to StaticContainer"
+        "no literal flag could be recovered; organizer review required"
       ],
       "manifest": "Jeopardy/Misc/denis-js/challenge.yaml"
     },
@@ -238,8 +239,10 @@
       "category": "Web",
       "source": "Misc/denis-js (fixed)/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js%20%28fixed%29",
-      "type": "StaticContainer",
-      "warnings": [],
+      "type": "DynamicContainer",
+      "warnings": [
+        "no literal flag could be recovered; organizer review required"
+      ],
       "manifest": "Jeopardy/Web/denis-js-fixed/challenge.yaml"
     },
     {
@@ -258,10 +261,9 @@
       "category": "Misc",
       "source": "Misc/functional/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/functional",
-      "type": "StaticContainer",
+      "type": "DynamicContainer",
       "warnings": [
-        "flag recovered from the archived challenge tree",
-        "dynamic container lacked a supported flag template; converted to StaticContainer"
+        "no literal flag could be recovered; organizer review required"
       ],
       "manifest": "Jeopardy/Misc/functional/challenge.yaml"
     },
@@ -279,8 +281,10 @@
       "category": "Misc",
       "source": "Misc/sym/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/sym",
-      "type": "StaticContainer",
-      "warnings": [],
+      "type": "DynamicContainer",
+      "warnings": [
+        "no literal flag could be recovered; organizer review required"
+      ],
       "manifest": "Jeopardy/Misc/sym/challenge.yaml"
     },
     {
@@ -288,8 +292,10 @@
       "category": "Misc",
       "source": "Misc/typically not a revenge/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/typically%20not%20a%20revenge",
-      "type": "StaticContainer",
-      "warnings": [],
+      "type": "DynamicContainer",
+      "warnings": [
+        "no literal flag could be recovered; organizer review required"
+      ],
       "manifest": "Jeopardy/Misc/typically-not-a-revenge/challenge.yaml"
     },
     {
@@ -489,7 +495,9 @@
       "source": "Pwn/Reading Test/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Reading%20Test",
       "type": "StaticAttachment",
-      "warnings": [],
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
       "manifest": "Jeopardy/Pwn/reading-test/challenge.yaml"
     },
     {
@@ -498,7 +506,9 @@
       "source": "Pwn/sim/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/sim",
       "type": "StaticAttachment",
-      "warnings": [],
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
       "manifest": "Jeopardy/Pwn/sim/challenge.yaml"
     },
     {

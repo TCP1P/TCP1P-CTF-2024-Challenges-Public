@@ -10,4 +10,4 @@ RUN chmod +x /opt/chall/app.ts
 RUN chown -R root:root /opt/chall/
 
 EXPOSE 6000
-CMD echo $RSCTF_FLAG > /flag-$(head -c8 /dev/urandom | md5sum | tr -cd '[:alnum:]') && socat TCP-LISTEN:6000,reuseaddr,fork EXEC:"deno run --no-prompt -A /opt/chall/app.ts",su=nobody
+CMD test -n "$RSCTF_FLAG" && flag_path=/flag-$(head -c8 /dev/urandom | md5sum | tr -cd '[:alnum:]') && printf '%s\n' "$RSCTF_FLAG" > "$flag_path" && unset RSCTF_FLAG && exec socat TCP-LISTEN:6000,reuseaddr,fork EXEC:"deno run --no-prompt -A /opt/chall/app.ts",su=nobody
