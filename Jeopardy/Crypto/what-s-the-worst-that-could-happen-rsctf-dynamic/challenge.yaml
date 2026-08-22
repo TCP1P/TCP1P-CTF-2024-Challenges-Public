@@ -1,0 +1,22 @@
+name: What's the Worst That Could Happen
+author: Wrth
+description: 'Why do AES have too much components?
+
+
+  Connect: nc {{ .host }} 19328
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/whats%20the%20worst%20that%20could%20happen).'
+type: DynamicContainer
+category: Crypto
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{what_s_the_[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 19328
+  enableTrafficCapture: false

@@ -1,0 +1,22 @@
+name: K
+author: rui
+description: 'For yall who like K pwn
+
+
+  **Connection**: `nc {{ .host }} 20024`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/K).'
+type: DynamicContainer
+category: Pwn
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{k_______________________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 8000
+  enableTrafficCapture: false

@@ -1,0 +1,22 @@
+name: Hacked-V2
+author: daffainfo
+description: 'Well wlll well, the hacker still managed to hack my website, I''m sure this time they won''t be able to hack my website
+
+
+  Connect: http://{{ .host }}:14012
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Hacked-V2).'
+type: DynamicContainer
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{hacked_v2_____________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 1337
+  enableTrafficCapture: false

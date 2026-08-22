@@ -12,6 +12,7 @@
       "source": "Blockchain/Curious Move/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Curious%20Move",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Blockchain/curious-move/challenge.yaml"
     },
@@ -20,47 +21,75 @@
       "category": "Blockchain",
       "source": "Blockchain/Executive Problem/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Executive%20Problem",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Blockchain/executive-problem/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{executive_problem_____________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through launcher FLAG environment contract",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Blockchain/executive-problem-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Inju's Gambit",
       "category": "Blockchain",
       "source": "Blockchain/Inju's Gambit/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Inju%27s%20Gambit",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Blockchain/inju-s-gambit/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{inju_s_gambit______________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through launcher FLAG environment contract",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Blockchain/inju-s-gambit-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Minecraft huh?",
       "category": "Blockchain",
       "source": "Blockchain/Minecraft huh/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Minecraft%20huh",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "no player attachment files were present"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{minecraft_huh________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through launcher FLAG environment contract",
+        "dynamic runtime compatibility rewrote 3 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Blockchain/minecraft-huh/challenge.yaml"
+      "manifest": "Jeopardy/Blockchain/minecraft-huh-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Baby ERC-20",
       "category": "Blockchain",
       "source": "Blockchain/babyerc20/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/babyerc20",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Blockchain/baby-erc-20/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{baby_erc_20___________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through launcher FLAG environment contract",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Blockchain/baby-erc-20-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Unsolveable Money Captcha",
       "category": "Blockchain",
       "source": "Blockchain/unsolveable-money-captcha/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/unsolveable-money-captcha",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Blockchain/unsolveable-money-captcha/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{unsolveable_money_captcha_[TEAM_HASH]}'",
+        "dynamic flag delivery proven through launcher FLAG environment contract",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Blockchain/unsolveable-money-captcha-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Guessing Master",
@@ -68,6 +97,7 @@
       "source": "Crypto/Guessing Master/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Guessing%20Master",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Crypto/guessing-master/challenge.yaml"
     },
@@ -76,18 +106,30 @@
       "category": "Crypto",
       "source": "Crypto/Molecular Cryptography/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Molecular%20Cryptography",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Crypto/molecular-cryptography/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{molecular_cryptography__________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived wrapped-flag payload",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Crypto/molecular-cryptography-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "molecular cryptography revenge",
       "category": "Crypto",
       "source": "Crypto/Molecular Cryptography Revenge/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Molecular%20Cryptography%20Revenge",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Crypto/molecular-cryptography-revenge/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{molecular_cryptography_revenge_____________[TEAM_HASH]}'",
+        "dynamic flag delivery uses the Pillow-generated flag image adapter",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Crypto/molecular-cryptography-revenge-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "TCP51Prime",
@@ -95,6 +137,7 @@
       "source": "Crypto/TCP51Prime/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/TCP51Prime",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Crypto/tcp51prime/challenge.yaml"
     },
@@ -104,6 +147,7 @@
       "source": "Crypto/rsa/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/rsa",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Crypto/that-one-rsa-challenge/challenge.yaml"
     },
@@ -112,18 +156,30 @@
       "category": "Crypto",
       "source": "Crypto/talking phase/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/talking%20phase",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Crypto/talking-phase/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{talking_phase_[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Crypto/talking-phase-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "What's the Worst That Could Happen",
       "category": "Crypto",
       "source": "Crypto/whats the worst that could happen/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/whats%20the%20worst%20that%20could%20happen",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Crypto/what-s-the-worst-that-could-happen/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{what_s_the_[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Crypto/what-s-the-worst-that-could-happen-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Direct-Love",
@@ -131,7 +187,10 @@
       "source": "Forensics/Direct-Love/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Direct-Love",
       "type": "StaticAttachment",
-      "warnings": [],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
       "manifest": "Jeopardy/Forensics/direct-love/challenge.yaml"
     },
     {
@@ -140,6 +199,7 @@
       "source": "Forensics/Doxxed/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Doxxed",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Forensics/doxxed/challenge.yaml"
     },
@@ -149,6 +209,7 @@
       "source": "Forensics/EncryptDecryptFile/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/EncryptDecryptFile",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Forensics/encryptdecryptfile/challenge.yaml"
     },
@@ -158,6 +219,7 @@
       "source": "Forensics/Forevncrypt/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Forevncrypt",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Forensics/forevncrypt/challenge.yaml"
     },
@@ -167,6 +229,7 @@
       "source": "Forensics/Lost Progress/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Lost%20Progress",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -178,6 +241,7 @@
       "source": "Forensics/SecreTalk/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/SecreTalk",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -189,7 +253,10 @@
       "source": "Forensics/Skibidi Format/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Skibidi%20Format",
       "type": "StaticAttachment",
-      "warnings": [],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [
+        "attachment omitted to stay below the repository size limit"
+      ],
       "manifest": "Jeopardy/Forensics/skibidi-format/challenge.yaml"
     },
     {
@@ -198,6 +265,7 @@
       "source": "Forensics/Sus/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Sus",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Forensics/sus/challenge.yaml"
     },
@@ -207,9 +275,8 @@
       "source": "Misc/CJ/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/CJ",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Misc/cj-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -218,9 +285,8 @@
       "source": "Misc/axed/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/axed",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Misc/axed-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -229,9 +295,8 @@
       "source": "Misc/denis-js/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Misc/denis-js-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -240,9 +305,8 @@
       "source": "Misc/denis-js (fixed)/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/denis-js%20%28fixed%29",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Web/denis-js-fixed-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -251,6 +315,7 @@
       "source": "Misc/feedback/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/feedback",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -262,9 +327,8 @@
       "source": "Misc/functional/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/functional",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Misc/functional-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -273,6 +337,7 @@
       "source": "Misc/nuclei-v2/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/nuclei-v2",
       "type": "StaticAttachment",
+      "runtimeReason": "Compose declares 2 services; the production Docker backend supports one service per DynamicContainer",
       "warnings": [],
       "manifest": "Jeopardy/Misc/nuclei-v2/challenge.yaml"
     },
@@ -282,9 +347,8 @@
       "source": "Misc/sym/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/sym",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Misc/sym-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -293,9 +357,8 @@
       "source": "Misc/typically not a revenge/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/typically%20not%20a%20revenge",
       "type": "DynamicContainer",
-      "warnings": [
-        "no literal flag could be recovered; organizer review required"
-      ],
+      "runtimeReason": null,
+      "warnings": [],
       "manifest": "Jeopardy/Misc/typically-not-a-revenge-rsctf-dynamic/challenge.yaml"
     },
     {
@@ -304,6 +367,7 @@
       "source": "Misc/welcome/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Misc/welcome",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -315,6 +379,7 @@
       "source": "Mobile/Interfaces/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/Interfaces",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Mobile/interfaces/challenge.yaml"
     },
@@ -324,6 +389,7 @@
       "source": "Mobile/LookDown/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/LookDown",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -335,6 +401,7 @@
       "source": "Mobile/LookUp/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/LookUp",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -346,6 +413,7 @@
       "source": "Mobile/Password Manager 2.0/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Mobile/Password%20Manager%202.0",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -357,6 +425,7 @@
       "source": "OSINT/Journalist/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Journalist",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/OSINT/journalist/challenge.yaml"
     },
@@ -366,6 +435,7 @@
       "source": "OSINT/Lost Younger Sister/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Lost%20Younger%20Sister",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -377,9 +447,8 @@
       "source": "OSINT/Night Live at Indonesian/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/Night%20Live%20at%20Indonesian",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/OSINT/night-live-at-indonesian/challenge.yaml"
     },
     {
@@ -388,6 +457,7 @@
       "source": "OSINT/That’s Him/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/That%E2%80%99s%20Him",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -399,6 +469,7 @@
       "source": "OSINT/The Investigator/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/The%20Investigator",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -410,6 +481,7 @@
       "source": "OSINT/The Pentagon/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/The%20Pentagon",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -421,9 +493,8 @@
       "source": "OSINT/bandit/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/OSINT/bandit",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/OSINT/bandit/challenge.yaml"
     },
     {
@@ -431,85 +502,121 @@
       "category": "Pwn",
       "source": "Pwn/Amnesia/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Amnesia",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{amnesia______________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/amnesia/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/amnesia-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Baby CFHP",
       "category": "Pwn",
       "source": "Pwn/Baby CFHP/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Baby%20CFHP",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Pwn/baby-cfhp/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{baby_cfhp_[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Pwn/baby-cfhp-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "K",
       "category": "Pwn",
       "source": "Pwn/K/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/K",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{k_______________________________[TEAM_HASH]}'",
+        "dynamic flag delivery uses the gzip cpio flag image adapter",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/k/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/k-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "K (K-Revenge)",
       "category": "Pwn",
       "source": "Pwn/K-Revenge/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/K-Revenge",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
         "duplicate legacy display name disambiguated with its source directory",
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{k[TEAM_HASH]}'",
+        "dynamic flag delivery uses the gzip cpio flag image adapter",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/k-k-revenge/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/k-k-revenge-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Lua Jail",
       "category": "Pwn",
       "source": "Pwn/Lua Jail/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Lua%20Jail",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{lua_jail____________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/lua-jail/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/lua-jail-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "PyCRUD",
       "category": "Pwn",
       "source": "Pwn/PyCRUD/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/PyCRUD",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Pwn/pycrud/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{pycrud______________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Pwn/pycrud-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Reading Test",
       "category": "Pwn",
       "source": "Pwn/Reading Test/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Reading%20Test",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{reading_test_______[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/reading-test/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/reading-test-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "sim",
       "category": "Pwn",
       "source": "Pwn/sim/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/sim",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{sim___[TEAM_HASH]}'",
+        "dynamic flag delivery proven through runtime environment variable",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/sim/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/sim-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Average Flag Checker",
@@ -517,6 +624,7 @@
       "source": "Reverse/Average Flag Checker/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Average%20Flag%20Checker",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -528,6 +636,7 @@
       "source": "Reverse/IDAGhidraMe/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/IDAGhidraMe",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -539,9 +648,8 @@
       "source": "Reverse/Imperfect Guesser/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Imperfect%20Guesser",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/Reverse/imperfect-guesser/challenge.yaml"
     },
     {
@@ -550,9 +658,8 @@
       "source": "Reverse/Nyann/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Nyann",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/Reverse/nyann/challenge.yaml"
     },
     {
@@ -561,6 +668,7 @@
       "source": "Reverse/Optimum/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Optimum",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -572,9 +680,8 @@
       "source": "Reverse/Serial/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/Serial",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/Reverse/serial/challenge.yaml"
     },
     {
@@ -583,9 +690,8 @@
       "source": "Reverse/WannaFlag/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Reverse/WannaFlag",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/Reverse/wannaflag/challenge.yaml"
     },
     {
@@ -594,6 +700,7 @@
       "source": "Web/Client Side Programming/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Client%20Side%20Programming",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -604,22 +711,30 @@
       "category": "Web",
       "source": "Web/Hacked/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Hacked",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{hacked________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/hacked/challenge.yaml"
+      "manifest": "Jeopardy/Web/hacked-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Hacked-V2",
       "category": "Web",
       "source": "Web/Hacked-V2/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Hacked-V2",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{hacked_v2_____________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/hacked-v2/challenge.yaml"
+      "manifest": "Jeopardy/Web/hacked-v2-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Pain",
@@ -627,9 +742,8 @@
       "source": "Web/Pain/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Pain",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/Web/pain/challenge.yaml"
     },
     {
@@ -638,6 +752,7 @@
       "source": "Web/Shikanoko nokonoko koshitantan!/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Shikanoko%20nokonoko%20koshitantan%21",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -649,9 +764,8 @@
       "source": "Web/ez-web/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/ez-web",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "warnings": [],
       "manifest": "Jeopardy/Web/ez-web/challenge.yaml"
     },
     {
@@ -660,6 +774,7 @@
       "source": "Web/multiplication/challenge.yaml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/multiplication",
       "type": "StaticAttachment",
+      "runtimeReason": "Compose declares 3 services; the production Docker backend supports one service per DynamicContainer",
       "warnings": [
         "attachment omitted to stay below the repository size limit"
       ],
@@ -671,9 +786,8 @@
       "source": "Web/pressword-v2/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/pressword-v2",
       "type": "StaticAttachment",
-      "warnings": [
-        "attachment omitted to stay below the repository size limit"
-      ],
+      "runtimeReason": "Compose declares 3 services; the production Docker backend supports one service per DynamicContainer",
+      "warnings": [],
       "manifest": "Jeopardy/Web/pressword-v2/challenge.yaml"
     }
   ]

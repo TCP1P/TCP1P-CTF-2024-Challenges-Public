@@ -1,0 +1,31 @@
+name: Minecraft huh?
+author: kiinzu
+description: 'Say, everyone knows minecraft right?
+
+  The game about mining block after block after block after block.....
+
+
+  NOTE!
+
+  You only need to spawn an instance, no need to press the "Flag" button.
+
+  The isSolved() function will always return false afterall.
+
+
+  Connect: http://{{ .host }}:44555
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/Minecraft%20huh).'
+type: DynamicContainer
+category: Blockchain
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{minecraft_huh________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 8080
+  enableTrafficCapture: false

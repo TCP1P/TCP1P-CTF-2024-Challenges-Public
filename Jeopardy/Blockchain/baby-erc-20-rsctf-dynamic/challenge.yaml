@@ -1,0 +1,21 @@
+name: Baby ERC-20
+author: shiro
+description: 'New token standards huh? https://eips.ethereum.org/EIPS/eip-20
+
+  Connect: http://{{ .host }}:13391
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/babyerc20).'
+type: DynamicContainer
+category: Blockchain
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{baby_erc_20___________________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 8080
+  enableTrafficCapture: false

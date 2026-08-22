@@ -1,0 +1,28 @@
+name: Unsolveable Money Captcha
+author: Dimas Maulana
+description: 'Oh no! Hackerika just made a super-duper mysterious block chain thingy!
+
+  I''m not sure what she''s up to, maybe creating a super cool bank app?
+
+  But guess what? It seems a bit wobbly because it''s asking us to solve a super tricky captcha!
+
+  What a silly kid! Let''s help her learn how to make a super-duper awesome contract with no head-scratching captcha! XD
+
+
+  Connect: http://{{ .host }}:50450
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Blockchain/unsolveable-money-captcha).'
+type: DynamicContainer
+category: Blockchain
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{unsolveable_money_captcha_[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 8080
+  enableTrafficCapture: false

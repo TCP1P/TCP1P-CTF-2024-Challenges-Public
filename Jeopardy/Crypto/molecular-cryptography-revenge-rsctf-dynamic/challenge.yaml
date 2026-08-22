@@ -1,0 +1,25 @@
+name: molecular cryptography revenge
+author: BerlianGabriel
+description: 'I have revamped my DNA encryption system, and now I use it to encrypt images! Now it shouldn''t be that easy to break.
+
+
+  Wrap the flag with TCP1P{}
+
+
+  Connect: nc {{ .host }} 1985
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Crypto/Molecular%20Cryptography%20Revenge).'
+type: DynamicContainer
+category: Crypto
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{molecular_cryptography_revenge_____________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 1985
+  enableTrafficCapture: false

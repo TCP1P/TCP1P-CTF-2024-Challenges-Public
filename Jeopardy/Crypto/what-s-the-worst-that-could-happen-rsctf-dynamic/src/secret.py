@@ -1,0 +1,1 @@
+flag = "RSCTF_DYNAMIC_FLAG_f0dd4c07d14f262"

@@ -1,0 +1,5 @@
+Skibidi Format
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Forensics/Skibidi%20Format
+
+Local archive note: attachment omitted to stay below the repository size limit.

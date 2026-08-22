@@ -1,0 +1,22 @@
+name: Hacked
+author: daffainfo
+description: 'My website is always being hacked by hackers >:(. That''s why I created a very very very very secure website so they can''t hack it again HAHAHAHA!!
+
+
+  Connect: http://{{ .host }}:10012
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Web/Hacked).'
+type: DynamicContainer
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{hacked________________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 1337
+  enableTrafficCapture: false

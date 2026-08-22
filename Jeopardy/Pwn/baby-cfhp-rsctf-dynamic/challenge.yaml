@@ -1,0 +1,22 @@
+name: Baby CFHP
+author: rui
+description: 'Yet another simple and minimalistic source given pwnable challenge
+
+
+  **Connection**: `nc {{ .host }} 20011`
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public/tree/main/Pwn/Baby%20CFHP).'
+type: DynamicContainer
+category: Pwn
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{baby_cfhp_[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 8000
+  enableTrafficCapture: false
