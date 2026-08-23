@@ -1,4 +1,7 @@
-FROM gcr.io/paradigmxyz/ctf/eth-base:latest
+FROM dimasmaualana/eth:latest@sha256:f9ee703e7da03d378d9a4fa70e00825e8a77593a29cf550dc7de5ede78f3ed58
+
+ENV LAUNCHER_PORT=8080
+EXPOSE 8080
 
 COPY deploy/ /home/ctf/
 
@@ -27,3 +30,4 @@ RUN set -eu; \
     mv /etc/rsctf-flag-targets.sorted /etc/rsctf-flag-targets; \
     while IFS= read -r target; do [ -f "$target" ] && chmod a+w "$target"; done < /etc/rsctf-flag-targets
 ENTRYPOINT ["/usr/local/bin/rsctf-entrypoint"]
+CMD ["/entrypoint.sh"]
