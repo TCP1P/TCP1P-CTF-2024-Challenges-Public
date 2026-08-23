@@ -3,6 +3,13 @@ FROM dimasmaualana/eth:latest@sha256:f9ee703e7da03d378d9a4fa70e00825e8a77593a29c
 ENV LAUNCHER_PORT=8080
 EXPOSE 8080
 
+# One RSCTF container serves one team. The upstream four-worker launcher wastes
+# memory and can OOM before it binds; keep modest request concurrency with one
+# gthread worker instead.
+RUN grep -q -- '--workers 4' /startup/96-start-launcher \
+    && grep -q -- '--threads 8' /startup/96-start-launcher \
+    && sed -i 's/--workers 4/--workers 1/; s/--threads 8/--threads 4/' /startup/96-start-launcher
+
 COPY deploy/ /home/ctf/
 
 COPY contracts /tmp/contracts

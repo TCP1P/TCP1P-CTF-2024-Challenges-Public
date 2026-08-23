@@ -22,7 +22,7 @@ difficulty: 5
 disableBloodBonus: false
 flagTemplate: TCP1P{unsolveable_money_captcha_[TEAM_HASH]}
 container:
-  memoryLimit: 128
-  cpuCount: 1
+  memoryLimit: 256
+  cpuCount: 5
   exposePort: 8080
   enableTrafficCapture: false
