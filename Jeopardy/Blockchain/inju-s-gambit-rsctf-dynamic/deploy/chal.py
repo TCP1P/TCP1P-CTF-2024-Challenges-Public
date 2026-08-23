@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-import eth_sandbox
+import sandbox
 from web3 import Web3
 
 def set_balance(web3: Web3, account_address: str, amount: int):
@@ -31,7 +31,7 @@ def deploy(web3: Web3, deployer_address: str, deployer_privateKey: str, player_a
     )
 
     tx_create = web3.eth.account.sign_transaction(construct_txn, deployer_privateKey)
-    tx_hash = web3.eth.send_raw_transaction(tx_create.rawTransaction)
+    tx_hash = web3.eth.send_raw_transaction(tx_create.raw_transaction)
 
     rcpt = web3.eth.wait_for_transaction_receipt(tx_hash)
 
@@ -40,4 +40,4 @@ def deploy(web3: Web3, deployer_address: str, deployer_privateKey: str, player_a
 
     return rcpt.contractAddress
 
-app = eth_sandbox.run_launcher(deploy)
+app = sandbox.run_launcher(deploy)
