@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skibidi Image Format Specification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #bdc3c7;
+            margin: 40px 0;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #bdc3c7;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Skibidi Image Format Specification</h1>
+
+    <p><strong>Version:</strong> 1.0<br>
+    <strong>Date:</strong> October 2024<br>
+    <strong>Author:</strong> Me</p>
+
+    <hr>
+
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#file-structure-overview">File Structure Overview</a></li>
+        <li><a href="#header-specification">Header Specification</a>
+            <ul>
+                <li><a href="#magic-number">Magic Number</a></li>
+                <li><a href="#image-dimensions">Image Dimensions</a></li>
+                <li><a href="#color-channels">Color Channels</a></li>
+                <li><a href="#compression-method">Compression Method</a></li>
+                <li><a href="#encryption-details">Encryption Details</a></li>
+                <li><a href="#reserved-fields">Reserved Fields</a></li>
+            </ul>
+        </li>
+        <li><a href="#pixel-data">Pixel Data</a></li>
+        <li><a href="#compression-and-encryption-workflow">Compression and Encryption Workflow</a></li>
+        <li><a href="#versioning">Versioning</a></li>
+        <li><a href="#error-handling">Error Handling</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#appendix">Appendix</a>
+            <ul>
+                <li><a href="#compression-method-identifiers">Compression Method Identifiers</a></li>
+                <li><a href="#color-channel-definitions">Color Channel Definitions</a></li>
+                <li><a href="#reserved-values">Reserved Values</a></li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2 id="introduction">Introduction</h2>
+
+    <p>The <strong>Skibidi</strong> image format (<code>.skibidi</code>) is a custom, proprietary image file format designed to efficiently store and secure pixel data. It integrates advanced features such as compression and encryption to ensure both storage efficiency and data security.</p>
+
+    <p>This specification outlines the structure, components, and operational workflow of the Skibidi format, providing developers with the necessary information to implement converters, readers, and other utilities compatible with <code>.skibidi</code> files.</p>
+
+    <hr>
+
+    <h2 id="file-structure-overview">File Structure Overview</h2>
+
+    <p>A Skibidi file is composed of two main sections:</p>
+
+    <ol>
+        <li><strong>Header:</strong> Contains metadata about the image, compression, and encryption details.</li>
+        <li><strong>Data Section:</strong> Holds the encrypted and compressed pixel data.</li>
+    </ol>
+
+    <pre>
+    +----------------------+-----------------------+
+    |       Header         |      Data Section     |
+    +----------------------+-----------------------+
+    |  Magic Number (4B)   | Encrypted Data        |
+    |  Width (4B)          |                       |
+    |  Height (4B)         |                       |
+    |  Channels (1B)       |                       |
+    |  Compression ID (1B) |                       |
+    |  AES Key (32B)       |                       |
+    |  AES IV (12B)        |                       |
+    +----------------------+-----------------------+
+    </pre>
+
+    <p><strong>Total Header Size:</strong> 58 bytes</p>
+
+    <hr>
+
+    <h2 id="header-specification">Header Specification</h2>
+
+    <p>The header provides essential information required to interpret and process the image data. Each field is stored in a specific order and format to ensure consistency.</p>
+
+    <h3 id="magic-number">Magic Number</h3>
+
+    <ul>
+        <li><strong>Offset:</strong> 0 bytes</li>
+        <li><strong>Size:</strong> 4 bytes</li>
+        <li><strong>Description:</strong> A unique identifier to recognize the Skibidi file format.</li>
+        <li><strong>Value:</strong> ASCII string <code>"SKB1"</code></li>
+    </ul>
+
+    <pre>
+    Bytes 0-3: 'S' 'K' 'B' '1'
+    </pre>
+
+    <h3 id="image-dimensions">Image Dimensions</h3>
+
+    <h4>Width</h4>
+    <ul>
+        <li><strong>Offset:</strong> 4 bytes</li>
+        <li><strong>Size:</strong> 4 bytes</li>
+        <li><strong>Type:</strong> <code>u32</code> (unsigned 32-bit integer)</li>
+        <li><strong>Endianness:</strong> Little Endian</li>
+        <li><strong>Description:</strong> Width of the image in pixels.</li>
+    </ul>
+
+    <h4>Height</h4>
+    <ul>
+        <li><strong>Offset:</strong> 8 bytes</li>
+        <li><strong>Size:</strong> 4 bytes</li>
+        <li><strong>Type:</strong> <code>u32</code> (unsigned 32-bit integer)</li>
+        <li><strong>Endianness:</strong> Little Endian</li>
+        <li><strong>Description:</strong> Height of the image in pixels.</li>
+    </ul>
+
+    <h3 id="color-channels">Color Channels</h3>
+
+    <ul>
+        <li><strong>Offset:</strong> 12 bytes</li>
+        <li><strong>Size:</strong> 1 byte</li>
+        <li><strong>Type:</strong> <code>u8</code> (unsigned 8-bit integer)</li>
+        <li><strong>Description:</strong> Number of color channels per pixel.</li>
+    </ul>
+
+    <h4>Supported Values:</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Channels</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Grayscale</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>RGB</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>RGBA</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 id="compression-method">Compression Method</h3>
+
+    <ul>
+        <li><strong>Offset:</strong> 13 bytes</li>
+        <li><strong>Size:</strong> 1 byte</li>
+        <li><strong>Type:</strong> <code>u8</code> (unsigned 8-bit integer)</li>
+        <li><strong>Description:</strong> Identifier for the compression algorithm used on pixel data.</li>
+    </ul>
+
+    <h4>Supported Compression Methods:</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Identifier</th>
+                <th>Compression Algorithm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Zstandard (<code>zstd</code>)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>[Reserved for Future]</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Example:</strong><br>
+    <code>1</code> indicates that Zstandard compression is used.</p>
+
+    <h3 id="encryption-details">Encryption Details</h3>
+
+    <h4>AES Key</h4>
+    <ul>
+        <li><strong>Offset:</strong> 14 bytes</li>
+        <li><strong>Size:</strong> 32 bytes</li>
+        <li><strong>Type:</strong> Byte Array (<code>[u8; 32]</code>)</li>
+        <li><strong>Description:</strong> AES-256 encryption key used for encrypting the compressed data.</li>
+    </ul>
+
+    <h4>AES Initialization Vector (IV)</h4>
+    <ul>
+        <li><strong>Offset:</strong> 46 bytes</li>
+        <li><strong>Size:</strong> 12 bytes</li>
+        <li><strong>Type:</strong> Byte Array (<code>[u8; 12]</code>)</li>
+        <li><strong>Description:</strong> 96-bit (12-byte) IV used for AES-GCM encryption.</li>
+    </ul>
+
+    <h3 id="reserved-fields">Reserved Fields</h3>
+
+    <ul>
+        <li><strong>Offset:</strong> 58 bytes onwards</li>
+        <li><strong>Size:</strong> Variable</li>
+        <li><strong>Description:</strong> Reserved for future extensions or additional metadata. Should be set to <code>0</code> bytes and ignored by parsers currently not supporting them.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="pixel-data">Pixel Data</h2>
+
+    <ul>
+        <li><strong>Location:</strong> Immediately follows the header (starting at byte 58).</li>
+        <li><strong>Content:</strong> Encrypted and compressed pixel data.</li>
+        <li><strong>Format:</strong> The pixel data is first compressed using the specified compression algorithm and then encrypted using AES-GCM with the provided key and IV.</li>
+    </ul>
+
+    <p><strong>Note:</strong> The actual pixel data is not stored in raw form but is instead processed through compression and encryption for efficiency and security.</p>
+
+    <hr>
+
+    <h2 id="compression-and-encryption-workflow">Compression and Encryption Workflow</h2>
+
+    <ol>
+        <li><strong>Compression:</strong>
+            <ul>
+                <li>The raw pixel data is compressed using the compression algorithm specified by the <code>Compression Method</code> field in the header.</li>
+                <li>Current implementation uses <strong>Zstandard (<code>zstd</code>)</strong> with a default compression level of <code>0</code>. Users can adjust compression levels based on their requirements for speed and compression ratio.</li>
+            </ul>
+        </li>
+        <li><strong>Encryption:</strong>
+            <ul>
+                <li>The compressed data is encrypted using <strong>AES-256-GCM</strong>.</li>
+                <li>A <strong>unique IV</strong> is generated for each encryption to ensure security.</li>
+                <li>The encryption process provides both confidentiality and integrity through authenticated encryption.</li>
+            </ul>
+        </li>
+        <li><strong>Header Construction:</strong>
+            <ul>
+                <li>The header is constructed with all necessary metadata, including image dimensions, color channels, compression method, AES key, and IV.</li>
+                <li>The header is then written to the output <code>.skibidi</code> file, followed by the encrypted data.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2 id="versioning">Versioning</h2>
+
+    <ul>
+        <li><strong>Field:</strong> <code>Magic Number</code></li>
+        <li><strong>Structure:</strong> The <code>Magic Number</code> includes a version identifier. The last character (e.g., <code>'1'</code> in <code>"SKB1"</code>) denotes the version.</li>
+        <li><strong>Current Version:</strong><br>
+        <code>"SKB1"</code> indicates version <strong>1</strong>.</li>
+        <li><strong>Purpose:</strong> Facilitates backward compatibility and future enhancements. Parsers can detect the version and handle accordingly.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="error-handling">Error Handling</h2>
+
+    <p>Skibidi parsers should implement robust error handling to manage various failure scenarios:</p>
+
+    <ol>
+        <li><strong>Invalid Magic Number:</strong>
+            <ul>
+                <li>If the magic number does not match <code>"SKB1"</code>, the parser should reject the file as an invalid Skibidi format.</li>
+            </ul>
+        </li>
+        <li><strong>Unsupported Compression Method:</strong>
+            <ul>
+                <li>If the <code>Compression Method</code> identifier is unrecognized, the parser should notify the user and halt processing.</li>
+            </ul>
+        </li>
+        <li><strong>Decryption Failures:</strong>
+            <ul>
+                <li>If decryption fails (e.g., due to incorrect key or corrupted data), the parser should alert the user and terminate.</li>
+            </ul>
+        </li>
+        <li><strong>Data Integrity Issues:</strong>
+            <ul>
+                <li>Mismatched data lengths (e.g., decompressed data size not matching expected image dimensions) should trigger errors.</li>
+            </ul>
+        </li>
+        <li><strong>Unsupported Color Channels:</strong>
+            <ul>
+                <li>If the <code>Channels</code> field contains an unsupported value, the parser should inform the user.</li>
+            </ul>
+        </li>
+        <li><strong>Malformed Header:</strong>
+            <ul>
+                <li>Any discrepancies or inconsistencies in the header fields should result in appropriate error messages.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2 id="example">Example</h2>
+
+    <h3>Converting a PNG to Skibidi</h3>
+
+    <h4>Command:</h4>
+    <pre><code>./png_to_skibidi input.png output.skibidi</code></pre>
+
+    <h4>Process:</h4>
+    <ol>
+        <li><strong>Load <code>input.png</code>:</strong>
+            <ul>
+                <li>Image dimensions: <strong>800x600</strong> pixels</li>
+                <li>Color channels: <strong>4</strong> (RGBA)</li>
+            </ul>
+        </li>
+        <li><strong>Compress Pixel Data:</strong>
+            <ul>
+                <li>Compression Method: <strong>Zstandard (<code>zstd</code>)</strong></li>
+                <li>Compressed Data Size: <strong>X</strong> bytes</li>
+            </ul>
+        </li>
+        <li><strong>Encrypt Compressed Data:</strong>
+            <ul>
+                <li>AES-256-GCM with randomly generated key and IV</li>
+                <li>Encrypted Data Size: <strong>Y</strong> bytes</li>
+            </ul>
+        </li>
+        <li><strong>Construct Header:</strong>
+            <ul>
+                <li>Magic Number: <code>"SKB1"</code></li>
+                <li>Width: <strong>800</strong> (<code>0x02000000</code> in little endian)</li>
+                <li>Height: <strong>600</strong> (<code>0x25800000</code> in little endian)</li>
+                <li>Channels: <strong>4</strong></li>
+                <li>Compression Method: <strong>1</strong> (Zstandard)</li>
+                <li>AES Key: <strong>32</strong> random bytes</li>
+                <li>AES IV: <strong>12</strong> random bytes</li>
+            </ul>
+        </li>
+        <li><strong>Write to <code>output.skibidi</code>:</strong>
+            <ul>
+                <li>Header (58 bytes)</li>
+                <li>Encrypted Data (<strong>Y</strong> bytes)</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Output:</h4>
+    <pre>
+    Successfully converted 'input.png' to 'output.skibidi' with dimensions 800x600, 4 channels, compressed with Zstandard, and encrypted with AES-GCM.
+    </pre>
+
+    <h3>Reading a Skibidi File</h3>
+    <pre>TODO...</pre>
+    <h2 id="appendix">Appendix</h2>
+
+    <h3 id="compression-method-identifiers">Compression Method Identifiers</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Identifier</th>
+                <th>Compression Algorithm</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Zstandard (<code>zstd</code>)</td>
+                <td>High compression ratio &amp; speed</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>[Reserved]</td>
+                <td>For future use</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Note:</strong> Always refer to the latest version of this specification to check for updates or additions to compression methods.</p>
+
+    <h3 id="color-channel-definitions">Color Channel Definitions</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+                <th>Channel Order</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Grayscale</td>
+                <td>Single channel</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>RGB</td>
+                <td>Red, Green, Blue</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>RGBA</td>
+                <td>Red, Green, Blue, Alpha</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Note:</strong> Additional color channel configurations can be added in future versions as needed.</p>
+
+    <h3 id="reserved-values">Reserved Values</h3>
+
+    <ul>
+        <li><strong>Compression Methods:</strong>
+            <ul>
+                <li>Identifiers beyond those currently defined (e.g., <code>2</code> and above) are reserved for future compression algorithms.</li>
+            </ul>
+        </li>
+        <li><strong>Reserved Header Fields:</strong>
+            <ul>
+                <li>Any bytes beyond the defined header fields (starting at byte <code>58</code>) are reserved and should be ignored by current parsers.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>Guidelines:</h4>
+    <ul>
+        <li><strong>Setting Reserved Fields:</strong> Set all reserved fields to <code>0</code> or leave them unused to maintain compatibility.</li>
+        <li><strong>Future Enhancements:</strong> Utilize reserved fields for additional metadata or future features without altering the existing header structure.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Final Notes</h2>
+
+    <p>The Skibidi image format is a versatile and secure method for storing image data, integrating compression and encryption to optimize storage and ensure data privacy. This specification serves as a foundational document for developers aiming to implement Skibidi-compatible tools and utilities. Future versions may expand upon this specification to incorporate additional features, optimizations, and security enhancements.</p>
+
+</body>
+</html>

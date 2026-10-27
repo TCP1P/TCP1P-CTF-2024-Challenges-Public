@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinanoko Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #3b3a30;d
+            color: #3b3a30;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://mediaformasi.com/content/images/2024/05/Still-images---008.jpg'); /* Replace with a valid URL to a deer-themed image */
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.5; /* Adjust the opacity to make it darker */
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff; /* Change text color to white for better contrast */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #6b4f4f;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3b3a30;
+        }
+
+        .output {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Berotak Nokotan</h1>
+    <form action="/">
+        <input type="text" name="html" placeholder="Enter HTML content">
+        <input type="submit">
+    </form>
+
+    <div class="output"></div>
+    <script src="https://unpkg.com/dompurify@latest/dist/purify.min.js"></script>
+    <script>
+        const url = new URL(location.href);
+        const html = url.searchParams.get('html');
+        if (html) {
+            document.querySelector('.output').innerHTML = DOMPurify.sanitize(html);
+        }
+    </script>
+</body>
+
+</html>
